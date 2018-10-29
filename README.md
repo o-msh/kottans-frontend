@@ -9,3 +9,20 @@ Wow... :feet: [course](https://github.com/kottans/frontend) :+1:
 ![completed](task_linux_cli/linux-command-line.png)
 2. [x] Codecademy [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)
 ![completed](task_linux_cli/codecademy-command-line.png)
+
+### Reflections in current state:
+
+> In [front-end dictionary](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) i found phrases/terminology/technnologies which new for me. Some of them was surprised me and i have intent use it in my future working. In fact, the following list is short of all results. I chose the main of them.
+
+**New for me:**
+1. Classitis
+2. Divitis
+3. Graceful degradation
+4. 9-slice scaling
+5. Interoperability
+
+**Interesting to try:**
+1. Continuous integration
+2. Progressive Web App, PWA
+
+> Thanks to the completed tasks, i reminded basic concepts of working with git. Almost overcome fear of commits and public code :grimacing:. Linux commands didn't new for me.
