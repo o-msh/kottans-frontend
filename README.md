@@ -29,3 +29,7 @@ Wow... :feet: [course](https://github.com/kottans/frontend) :+1:
 ![completed](task_linux_cli/codecademy-command-line.png)
 
 > Linux commands didn't new for me.
+
+## Git for Team Collaboration
+1. [x] Udacity [Version Control with Git](https://classroom.udacity.com/courses/ud123/)
+![completed](task_git_collaboration/version-control-with-git.png)
