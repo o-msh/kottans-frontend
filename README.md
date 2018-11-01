@@ -3,15 +3,18 @@ Wow... :feet: [course](https://github.com/kottans/frontend) :+1:
 > Programming - it's difficult and interesting simultaneously. For learning you must be self-organized and getting a good materials. I'm pleasantly impressed with the structure of tasks.
 ### Reflections
 > In [front-end dictionary](https://github.com/web-standards-ru/dictionary/blob/master/dictionary.md) i found phrases/terminology/technnologies which new for me. Some of them was surprised me and i have intent use it in my future working. In fact, the following list is short of all results. I chose the main of them.
+
 **New for me:**
 1. Classitis
 2. Divitis
 3. Graceful degradation
 4. 9-slice scaling
 5. Interoperability
+
 **Interesting to try:**
 1. Continuous integration
 2. Progressive Web App, PWA
+
 ## Git and GitHub
 > Thanks to the completed tasks, i reminded basic concepts of working with git. Almost overcome fear of commits and public code :grimacing:.
 ## Linux CLI, and HTTP
@@ -25,7 +28,7 @@ Wow... :feet: [course](https://github.com/kottans/frontend) :+1:
 ![completed](task_git_collaboration/version-control-with-git.png)
 2. [x] Udacity [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456)
 ![completed](task_git_collaboration/github-and-collaboration.png)
-> New for me was functions and they parameters that allows you to modify or revert commits. Also i wrote useful parameters.
+> New for me was functions and they parameters that allows you to modify or revert commits. Also i wrote useful commands.
 ### Tooltips:
 ```
 git commit --amend
