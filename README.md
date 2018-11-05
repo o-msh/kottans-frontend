@@ -51,3 +51,10 @@ git shortlog [<options>]
 ## Intro to HTML and CSS
 1. [x] Udacity [Intro to HTML & CSS](https://www.udacity.com/course/intro-to-html-and-css--ud001)
 ![completed](task_git_html_css_intro/intro-to-html-css.png)
+2. [x] HTML Academy
+
+* [Basics of HTML](https://htmlacademy.ru/courses/4/)
+![completed](task_git_html_css_intro/html-part-1.png)
+![completed](task_git_html_css_intro/html-part-2.png)
+* [Basics of CSS](https://htmlacademy.ru/courses/41)
+![completed](task_git_html_css_intro/css.png)
