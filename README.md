@@ -57,3 +57,7 @@ git shortlog [<options>]
 ![completed](task_git_html_css_intro/html.png)
 * [Basics of CSS](https://htmlacademy.ru/courses/41)
 ![completed](task_git_html_css_intro/css.png)
+
+## Responsive Web Design
+1. [x] Udacity [Responsive Web Design Fundamentals](https://www.udacity.com/course/responsive-web-design-fundamentals--ud893)
+![completed](task_responsive_web_design/udacity_responsive.png)
