@@ -64,3 +64,4 @@ git shortlog [<options>]
 2. [x] [Flexbox Froggy](http://flexboxfroggy.com/)
 
 ![completed](task_responsive_web_design/flexbox-froggy.png)
+> It was wonderful. I reminded myself of the basic css rules for build responsive pages. CSS Grid layout and Flexbox - powerfull conception for design web pages. 
