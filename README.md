@@ -64,4 +64,11 @@ git shortlog [<options>]
 2. [x] [Flexbox Froggy](http://flexboxfroggy.com/)
 
 ![completed](task_responsive_web_design/flexbox-froggy.png)
-> It was wonderful. I reminded myself of the basic css rules for build responsive pages. CSS Grid layout and Flexbox - powerfull conception for design web pages. 
+> It was wonderful. I reminded myself of the basic css rules for build responsive pages. CSS Grid layout and Flexbox - powerfull conception for design web pages.
+
+## JS Basics
+1. [x] Udacity [Intro to JS](https://www.udacity.com/course/intro-to-javascript--ud803)
+![completed](task_js_basics/intro-to-js-udacity.png)
+2. [x] freeCodeCamp [Algorithm Scripting Challenges](https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/)
+
+![completed](task_js_basics/freecodecamp.png)
