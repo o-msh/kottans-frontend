@@ -1,9 +1,9 @@
 ## Git Collaboration
 
 - [x] Udacity [Version Control with Git](https://classroom.udacity.com/courses/ud123/)
-![completed](version-control-with-git.png)
+![completed](version_control_with_git.png)
 - [x] Udacity [GitHub & Collaboration](https://classroom.udacity.com/courses/ud456)
-![completed](github-and-collaboration.png)
+![completed](github_and_collaboration.png)
 
 > New for me was functions and they parameters that allows you to modify or revert commits. Also i wrote useful commands.
 
@@ -27,4 +27,4 @@ git shortlog [<options>]
     -n
 ```
 
-(back)[../README.md]
+[back](../README.md)

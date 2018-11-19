@@ -13,4 +13,4 @@
 1. Continuous integration
 2. Progressive Web App, PWA
 
-(back)[../README.md]
+[back](../README.md)
