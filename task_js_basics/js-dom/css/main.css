@@ -1,0 +1,21 @@
+body {
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navigation {
+    width: 20%;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu a {
+    text-decoration: none;
+}
+.content {
+    width: 80%;
+    text-align: center;
+}
