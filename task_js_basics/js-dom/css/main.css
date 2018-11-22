@@ -157,6 +157,14 @@ body {
     list-style-type: none;
 }
 
+.content .loading_div {
+    display: none;
+}
+
+.content .loading_div.show {
+    display: block;
+}
+
 @media only screen and (max-width: 850px) {
     .container {
         flex-direction: column;
@@ -202,5 +210,10 @@ body {
         padding: 0px;
         margin: 5px;
         border-radius: 5px;
+    }
+
+    .content .loading_div img{
+        width: 50%;
+        height: 50%;
     }
 }

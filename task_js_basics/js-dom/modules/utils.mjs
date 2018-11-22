@@ -44,6 +44,10 @@ const menuHandlerClick = (e) => {
 
 const btnHandlerClick = e => {
     let type = e.target.dataset.type;
+    document.querySelector(".loading_div").classList.add("show");
+    let userDiv = document.querySelector(".user_div");
+    let currencyDiv = document.querySelector(".currency_div");
+    userDiv ? userDiv.innerHTML = "" : currencyDiv ? currencyDiv.innerHTML = "" : false;
     switch (type) {
         case "random_user":
             fetch("https://randomuser.me/api/?results=5").then(response => {
@@ -76,9 +80,11 @@ const btnHandlerClick = e => {
                         userCard.appendChild(userInfo);
                         div.appendChild(userCard);
                     });
+                    document.querySelector(".loading_div").classList.remove("show");
                     document.querySelector(".content").appendChild(div);
                 }
             }).catch(e => {
+                document.querySelector(".loading_div").classList.remove("show");
                 console.log('There has been a problem with your fetch operation: ' + e.message);
             });
             break;
@@ -107,9 +113,11 @@ const btnHandlerClick = e => {
                             </ul>`);
                         div.appendChild(currencyCard);
                     });
+                    document.querySelector(".loading_div").classList.remove("show");
                     document.querySelector(".content").appendChild(div);
                 }
             }).catch(e => {
+                document.querySelector(".loading_div").classList.remove("show");
                 console.log('There has been a problem with your fetch operation: ' + e.message);
             });
             break;
