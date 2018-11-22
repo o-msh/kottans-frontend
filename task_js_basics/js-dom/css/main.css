@@ -6,10 +6,12 @@ html {
 html, body {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 
 body {
     background: linear-gradient(to bottom,#f9fbf7, #C9D8FF);
+    background-attachment: fixed;
 }
 
 .container {
@@ -92,9 +94,44 @@ body {
 .content {
     width: 80%;
     text-align: center;
+    padding-top: 15px;
 }
 
-@media only screen and (max-width: 800px) {
+.content .btn_get_data {
+    background-color: #3d6def;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+.content .user_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.content .user_div img {
+    border-radius: 50%;
+}
+
+.content .user_div .user_card .user_info {
+    margin-top: 10px;
+}
+
+.content .user_div .user_card .user_info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 850px) {
     .container {
         flex-direction: column;
     }
@@ -105,5 +142,17 @@ body {
 
     .content {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .content .user_div {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .content .user_div .user_card {
+        width: 100%;
+        margin-top: 25px;
     }
 }
