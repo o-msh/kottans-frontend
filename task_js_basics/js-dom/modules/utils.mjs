@@ -83,6 +83,35 @@ const btnHandlerClick = e => {
             });
             break;
         case "currency":
+            fetch("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json").then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                throw new Error("Network response was not ok.");
+            }).then(currency => {
+                if (window.location.hash === "#currency") {
+                    let div = document.querySelector("div.currency_div");
+                    if (!div) {
+                        div = document.createElement("div");
+                    } else {
+                        div.innerHTML = "";
+                    }
+                    div.classList.add("currency_div");
+                    currency.forEach(el => {
+                        let currencyCard = document.createElement("div");
+                        currencyCard.classList.add("currency_card");
+                        currencyCard.insertAdjacentHTML("beforeend", `<ul>
+                                <li>${el.txt}</li>
+                                <li>${el.cc}</li>
+                                <li>${el.rate}</li>
+                            </ul>`);
+                        div.appendChild(currencyCard);
+                    });
+                    document.querySelector(".content").appendChild(div);
+                }
+            }).catch(e => {
+                console.log('There has been a problem with your fetch operation: ' + e.message);
+            });
             break;
         default:
             break;

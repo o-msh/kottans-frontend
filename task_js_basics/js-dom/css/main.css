@@ -121,6 +121,7 @@ body {
 
 .content .user_div img {
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
 
 .content .user_div .user_card .user_info {
@@ -129,6 +130,28 @@ body {
 }
 
 .content .user_div .user_card .user_info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.content .currency_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px 25px 0px 25px;
+}
+
+.content .currency_div .currency_card {
+    background-color: #C9D8FF;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.content .currency_div .currency_card ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -160,7 +183,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 160px) {
+@media only screen and (max-width: 200px) {
     body {
         font-size: 12px;
     }
@@ -173,5 +196,11 @@ body {
     .content .btn_get_data {
         padding: 5px;
         font-size: 12px;
+    }
+
+    .content .currency_div .currency_card {
+        padding: 0px;
+        margin: 5px;
+        border-radius: 5px;
     }
 }
