@@ -17,9 +17,6 @@ const generateMenu = (data) => {
             let a = document.createElement("a");
             a.addEventListener("click", e => menuHandlerClick(e));
             a.href = el.link;
-            let div = document.createElement("div");
-            div.classList.add("left_border");
-            a.appendChild(div);
             a.innerHTML += `${el.title}${el.icon}`;
             li.appendChild(a);
             menu.appendChild(li);
@@ -30,6 +27,7 @@ const generateMenu = (data) => {
 }
 
 const menuHandlerClick = (e) => {
+    e.preventDefault();
     let current = e.target;
     document.querySelector(".menu_item.active").classList.remove("active");
     getParentNode(current, "LI").classList.add("active");
@@ -37,12 +35,13 @@ const menuHandlerClick = (e) => {
         current = getParentNode(current, "A");
     }
     document.querySelector(".content").innerHTML = getContent(current.getAttribute("href"));
+    window.location.hash = current.getAttribute("href");
     let btnGetData = document.querySelector(".btn_get_data");
         btnGetData ? btnGetData.addEventListener("click", e => btnHandlerClick(e)) : null;
-    return;
 }
 
 const btnHandlerClick = e => {
+    e.preventDefault();
     let type = e.target.dataset.type;
     document.querySelector(".loading_div").classList.add("show");
     let userDiv = document.querySelector(".user_div");
@@ -142,7 +141,6 @@ const getParentNode = (node, parentTag) => {
 const init = () => {
     let menu = generateMenu(data);
     menu ? document.querySelector(".navigation").appendChild(menu) : alert("Error menu generation");
-    return;
 }
 
 export default {

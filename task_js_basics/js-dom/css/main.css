@@ -39,6 +39,22 @@ body {
     position: relative;
 }
 
+.menu_item .menu_item_icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0%;
+    fill: #8995b6;
+}
+
+.menu_item.active .menu_item_icon {
+    fill: #3d6def;
+}
+
+.menu_item a:hover .menu_item_icon {
+    fill: #3d6def;
+}
+
 .menu_item a {
     padding: 15px 0px 15px 0px;
     text-decoration: none;
@@ -48,11 +64,15 @@ body {
     display: block;
 }
 
-.menu_item:hover a {
+.menu_item.active a {
     color: #3d6def;
 }
 
-.menu_item .left_border {
+.menu_item a:hover {
+    color: #3d6def;
+}
+
+.menu_item a::before {
     content:'';
     position: absolute;
     width: 3px;
@@ -61,35 +81,15 @@ body {
     top: 50%;
     left: 1%;
     transform: translateY(-50%);
-    display:none;
+    display: none;
 }
 
-.menu_item:hover .left_border {
+.menu_item a:hover::before {
     display: block;
 }
 
-.menu_item .menu_item_icon {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 0%;
-    fill: #8995b6;
-}
-
-.menu_item:hover .menu_item_icon {
-    fill: #3d6def;
-}
-
-.menu_item.active a {
-    color: #3d6def;
-}
-
-.menu_item.active .left_border {
+.menu_item.active a::before {
     display: block;
-}
-
-.menu_item.active .menu_item_icon {
-    fill: #3d6def;
 }
 
 .content {
