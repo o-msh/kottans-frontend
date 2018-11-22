@@ -10,6 +10,7 @@ const generateMenu = (data) => {
                 defaultFlag = !defaultFlag;
                 li.classList.add("menu_item", "active");
                 document.querySelector(".content").innerHTML = el.content;
+                window.location.hash = el.link;
             } else {
                 li.classList.add("menu_item");
             }
@@ -59,7 +60,6 @@ const btnHandlerClick = e => {
                         div.innerHTML = "";
                     }
                     div.classList.add("user_div");
-                    console.log(user.results);
                     user.results.forEach(el => {
                         let userCard = document.createElement("div");
                         userCard.classList.add("user_card");

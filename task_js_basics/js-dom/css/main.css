@@ -12,6 +12,7 @@ html, body {
 body {
     background: linear-gradient(to bottom,#f9fbf7, #C9D8FF);
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
@@ -101,12 +102,13 @@ body {
     background-color: #3d6def;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px;
     margin-top: 10px;
     text-align: center;
     font-size: 16px;
     outline: none;
     cursor: pointer;
+    border-radius: 15px;
 }
 
 .content .user_div {
@@ -114,7 +116,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 25px;
+    padding: 25px 25px 0px 25px;
 }
 
 .content .user_div img {
@@ -123,6 +125,7 @@ body {
 
 .content .user_div .user_card .user_info {
     margin-top: 10px;
+    word-wrap: break-word;
 }
 
 .content .user_div .user_card .user_info ul {
@@ -154,5 +157,21 @@ body {
     .content .user_div .user_card {
         width: 100%;
         margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 160px) {
+    body {
+        font-size: 12px;
+    }
+
+    .content .user_div img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .content .btn_get_data {
+        padding: 5px;
+        font-size: 12px;
     }
 }
