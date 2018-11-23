@@ -38,6 +38,8 @@ const menuHandlerClick = (e) => {
     window.location.hash = current.getAttribute("href");
     let btnGetData = document.querySelector(".btn_get_data");
         btnGetData ? btnGetData.addEventListener("click", e => btnHandlerClick(e)) : null;
+    document.querySelector(".navigation").classList.toggle("active");
+    document.querySelector(".mobile_icon").classList.toggle("change");
 }
 
 const btnHandlerClick = e => {
@@ -141,6 +143,10 @@ const getParentNode = (node, parentTag) => {
 const init = () => {
     let menu = generateMenu(data);
     menu ? document.querySelector(".navigation").appendChild(menu) : alert("Error menu generation");
+    document.querySelector(".mobile_icon").addEventListener("click", function(e) {
+        this.classList.toggle("change");
+        document.querySelector(".navigation").classList.toggle("active");
+    })
 }
 
 export default {
