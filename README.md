@@ -13,3 +13,4 @@
  - [x] 3. [Intro to HTML and CSS](task_git_html_css_intro/html_css.md) 
  - [x] 4. [Responsive Web Design](task_responsive_web_design/responsive.md)
  - [x] 5. [JavaScript Basics](task_js_basics/js_basics.md)
+ - [x] 6. [Document Object Model](task_js_dom/js_dom.md)
