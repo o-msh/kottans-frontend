@@ -75,8 +75,8 @@ body {
     color: #3d6def;
 }
 
-.menu_item a::before {
-    content:'';
+.menu_item.active a::before {
+    content: "";
     position: absolute;
     width: 3px;
     height: 28px;
@@ -84,15 +84,6 @@ body {
     top: 50%;
     left: 1%;
     transform: translateY(-50%);
-    display: none;
-}
-
-.menu_item a:hover::before {
-    display: block;
-}
-
-.menu_item.active a::before {
-    display: block;
 }
 
 .content {
