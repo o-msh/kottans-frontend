@@ -14,3 +14,4 @@
  - [x] 4. [Responsive Web Design](task_responsive_web_design/responsive.md)
  - [x] 5. [JavaScript Basics](task_js_basics/js_basics.md)
  - [x] 6. [Document Object Model](task_js_dom/js_dom.md)
+    - Practical task reviewed and approved by @zonzujiro [Demo](https://o-msh.github.io/kottans-frontend/practice/js-dom/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/js-dom)
