@@ -15,3 +15,6 @@
  - [x] 5. [JavaScript Basics](task_js_basics/js_basics.md)
  - [x] 6. [Document Object Model](task_js_dom/js_dom.md)
     - Practical task reviewed and approved by @zonzujiro [Demo](https://o-msh.github.io/kottans-frontend/practice/js-dom/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/js-dom)
+## Advanced Topics
+ - [x] 7. [A Tiny JS World](https://github.com/o-msh/a-tiny-JS-world) | [Demo](https://o-msh.github.io/a-tiny-JS-world/)
+   - Practical task reviewed and approved by @OleksiyRudenko
