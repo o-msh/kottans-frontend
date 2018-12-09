@@ -6,4 +6,8 @@
 
 ![completed](freecodecamp.png)
 
+- [x] [Data Structures and Algorithms in JavaScript](https://egghead.io/courses/data-structures-and-algorithms-in-javascript)
+
+![completed](js_data_algorithms.png)
+
 [back](../README.md)
