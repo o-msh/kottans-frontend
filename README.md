@@ -24,3 +24,4 @@
 
   - [x] 7. [A Tiny JS World](https://github.com/o-msh/a-tiny-JS-world)
     - Practical task reviewed and approved by @OleksiyRudenko | [Demo](https://o-msh.github.io/a-tiny-JS-world/)
+  - [x] 8. [Object Oriented JS](task_js_oop/js-oop.md)
