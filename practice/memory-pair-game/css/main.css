@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 15px);
+    position: relative;
+    height: 150px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 0.5s;
+    margin-top: 15px;
+}
+
+.card.hidden {
+    visibility:hidden;
+}
+
+.card.flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card_side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card_side.front {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.card_side.back {
+  transform: rotateY(180deg);
+}
+
+.card_side.back img {
+    width: 100%;
+    height: 100%;
+}
