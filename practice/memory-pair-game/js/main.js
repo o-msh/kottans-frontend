@@ -1,4 +1,5 @@
 const flipClassName = "flipped";
+const delay = 1000;
 const imgs = [
     "../img/santa_christmas_emoji_cool_sunglasses.png",
     "../img/santa_christmas_emoji_dribble_silly.png",
@@ -7,51 +8,70 @@ const imgs = [
     "../img/santa_christmas_emoji_sleep_tired.png",
     "../img/santa_christmas_emoji_wink_tongue.png"
 ];
+const winnerMessage = () => "<div class='winner'>Congratulations!<br><button>New Game</button><div class='celebration_gif'><iframe src='https://giphy.com/embed/itDBteCsTFSVO' width='100%' height='100%' frameBorder='0' class='giphy-embed'></iframe><p><a href='https://giphy.com/gifs/girlfriend-test-pregnancy-itDBteCsTFSVO'></a></p></div></div>";
+let container;
 let openedCards = [];
+let flipState = false;
 
 const handlerFlip = e => {
+    if (flipState) return;
     let card = e.target.parentNode;
-    let src = card.querySelector("img").getAttribute("src");
     if (card.matches(".card")) {
         if (!card.classList.contains(flipClassName)) {
-            let item = card.dataset.item;
+            let src = card.querySelector("img").getAttribute("src");
             card.classList.add(flipClassName);
-            openedCards.push({ item: item, card: card, src: src });
+            openedCards.push({ card: card, src: src });
             checkCoincidence();
         }
+    } else if (card.matches(".winner")) {
+        prepareGameField();
+        fillGameField();
     }
 };
 
 const checkCoincidence = () => {
     let length = openedCards.length;
     if (length === 2) {
+        changeFlipState();
         if (openedCards[0].src === openedCards[1].src) {
             hideCoincidence();
         } else {
             hideFlipped();
         }
-        openedCards = [];
+        setTimeout(() => {
+            openedCards = [];
+            changeFlipState();
+            checkForWin();
+        }, delay);
     }
 };
 
 const hideCoincidence = () => {
-    openedCards.forEach(({ card }) => {
-        setTimeout(() => {
+    setTimeout(() => {
+        openedCards.forEach(({ card }) => {
             card.classList.remove(flipClassName);
             card.classList.add("hidden");
-        }, 1000);
-    });
+        });
+    }, delay);
 };
+
+const changeFlipState = () => flipState = !flipState;
 
 const hideFlipped = () => {
-    openedCards.forEach(({ card }) => {
-        setTimeout(() => {
+    setTimeout(() => {
+        openedCards.forEach(({ card }) => {
             card.classList.toggle(flipClassName);
-        }, 1000);
-    })
+        });
+    }, delay);
 };
 
-createCards = () => {
+const checkForWin = () => {
+    if (container.querySelectorAll(".hidden").length === imgs.length * 2) {
+        container.innerHTML = winnerMessage();
+    }
+};
+
+const createCards = () => {
     let fragment = document.createDocumentFragment();
     let images = imgs;
     images = images.concat(images);
@@ -72,8 +92,21 @@ createCards = () => {
     return fragment;
 };
 
-window.onload = () => {
-    const container = document.querySelector(".container");
+const prepareGameField = () => {
+    container = document.querySelector(".container");
+    container.innerHTML = "";
+};
+
+const fillGameField = () => {
     container.appendChild(createCards());
+};
+
+const startGame = () => {
+    prepareGameField();
+    fillGameField();
     container.addEventListener("click", handlerFlip);
+};
+
+window.onload = () => {
+    startGame();
 };
