@@ -11,14 +11,18 @@ body {
 }
 
 .card {
-    width: calc(25% - 5px);
+    width: calc(25% - 15px);
     position: relative;
     height: 150px;
     cursor: pointer;
     transform-style: preserve-3d;
     transform-origin: center right;
     transition: transform 1s;
-    margin-top: 5px;
+    margin-top: 15px;
+}
+
+.card.hidden {
+    visibility:hidden;
 }
 
 .card.flipped {
