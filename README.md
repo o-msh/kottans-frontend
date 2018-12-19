@@ -32,3 +32,7 @@
   - [x] 9. [OOP Exercise](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
     - Reviewed and approved by @OleksiyRudenko
     [Demo](https://o-msh.github.io/a-tiny-JS-world/)
+  - [ ] 10. Offline Web Applications (Will be complete soon) Optional!
+  - [ ] 11. Memory pair game (PR)
+  - [ ] 12. Website Performance Optimization (Will be complete soon) Optional!
+  - [ ] 13. Friends App (In developing)
