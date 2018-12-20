@@ -18,21 +18,23 @@
  - [x] 4. [Responsive Web Design](task_responsive_web_design/responsive.md)
  - [x] 5. [JavaScript Basics](task_js_basics/js_basics.md)
  - [x] 6. [Document Object Model](task_js_dom/js_dom.md)
-    - Reviewed and approved by @zonzujiro
+    - Reviewed and approved by **@zonzujiro**
     [Demo](https://o-msh.github.io/kottans-frontend/practice/js-dom/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/js-dom)
 
 ## Advanced Topics
 
-  - [x] 7. [A Tiny JS World](https://github.com/o-msh/a-tiny-JS-world)
-    - Reviewed and approved by @OleksiyRudenko
-    [Demo](https://o-msh.github.io/a-tiny-JS-world/)
+  - [x] 7. [A Tiny JS World](https://o-msh.github.io/a-tiny-JS-world/)
+    - Reviewed and approved by **@OleksiyRudenko**
+    [Code base](https://github.com/o-msh/a-tiny-JS-world)
   - [x] 8. [Object Oriented JS](task_js_oop/js-oop.md)
-    - Reviewed and approved by @OleksiyRudenko
+    - Reviewed and approved by **@OleksiyRudenko**
     [Demo](https://o-msh.github.io/frontend-nanodegree-arcade-game/) | [Code base](https://github.com/o-msh/frontend-nanodegree-arcade-game)
-  - [x] 9. [OOP Exercise](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
-    - Reviewed and approved by @OleksiyRudenko
-    [Demo](https://o-msh.github.io/a-tiny-JS-world/)
-  - [ ] 10. Offline Web Applications (Will be complete soon) Optional!
-  - [ ] 11. Memory pair game (PR)
-  - [ ] 12. Website Performance Optimization (Will be complete soon) Optional!
+  - [x] 9. [OOP Exercise](https://o-msh.github.io/a-tiny-JS-world/)
+    - Reviewed and approved by **@OleksiyRudenko**
+    [Code base](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
+  - [ ] 10. Offline Web Applications (Optional)
+  - [x] 11. [Memory pair game](https://o-msh.github.io/kottans-frontend/practice/memory-pair-game/)
+    - Reviewed and approved by **@AMashoshyna**
+    [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/memory-pair-game)
+  - [ ] 12. Website Performance Optimization (Optional)
   - [ ] 13. Friends App (In developing)
