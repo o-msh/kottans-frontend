@@ -80,13 +80,13 @@ const filterController = () => {
     }, filteredFriends);
 };
 
+const prepareFilters = options => {
+    let filterIndex = state.filters.findIndex(obj => obj.name === options.name);
+    filterIndex != "-1" ? state.filters[filterIndex].value = options.value : state.filters.push(options);
+}
+
 const searchHandlerInput = e => {
-    if (state.filters.filter(f => f.name === "search").length > 0) {
-        state.filters.filter(f => f.name === "search")[0].value = e.target.value;
-    } else {
-        state.filters.push({ name: "search", func: searchFriends, value: e.target.value });
-    }
-    console.log(state.filters);
+    prepareFilters({ name: "search", func: searchFriends, value: e.target.value });
     render(generateCards(filterController()));
 };
 
