@@ -1,9 +1,10 @@
-const url = "https://randomuser.me/api/?results=50";
+const url = "https://randomuser.me/api/?results=60";
 
 const domElements = {
     main: false,
     loading: false,
-    search: false
+    search: false,
+    filter: false
 };
 
 const state = {
@@ -69,9 +70,12 @@ const initDomElements = () => {
     domElements.main = document.querySelector(".main");
     domElements.loading = document.querySelector(".loading");
     domElements.search = document.querySelector(".search");
+    domElements.filter = document.querySelector(".filter");
 };
 
 const searchFriends = (data, value) => data.filter(obj => [obj.name.first].join().toUpperCase().includes(value.toUpperCase()));
+
+const filterByGender = (data, value) => data.filter(obj => obj.gender.toUpperCase() === value.toUpperCase());
 
 const filterController = () => {
     let filteredFriends = state.allFriends;
@@ -90,9 +94,26 @@ const searchHandlerInput = e => {
     render(generateCards(filterController()));
 };
 
+const filterHandler = e => {
+    const target = e.target;
+    if (target.type === "radio") {
+        const radioName = target.name;
+        const radioValue = target.value;
+        console.log(radioName, radioValue);
+    }
+};
+
 const setEventListener = () => {
     domElements.search.addEventListener('input', searchHandlerInput);
+    domElements.filter.addEventListener('click', filterHandler);
 };
+
+const generateErrorMessage = (e) => {
+    const errorBlock = document.createElement("div");
+    errorBlock.classList.add("error");
+    errorBlock.innerHTML = `Oops... ${e.message}`;
+    return errorBlock;
+}
 
 window.onload = async () => {
     try {
@@ -104,6 +125,6 @@ window.onload = async () => {
         setEventListener();
     } catch (e) {
         hideLoader();
-        console.error(`catch error: '${e.message}'`);
+        render(generateErrorMessage(e));
     }
 };

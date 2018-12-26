@@ -1,7 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: #eee;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .container {
@@ -11,9 +11,16 @@ body {
 }
 
 .control {
-    width: 50%;
+    width: 100%;
     align-self: center;
     text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .search {
@@ -32,21 +39,14 @@ body {
 }
 
 .search:focus {
-    width: 100%;
-}
-
-.main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 100%;
+    width: 50%;
 }
 
 .card {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    width: 50%;
+    width: 25%;
     margin: 15px 0px 15px 0px;
 }
 
@@ -75,6 +75,15 @@ body {
     text-transform: capitalize;
 }
 
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter > * {
+    width: 30%;
+}
+
 .loading {
     margin-top: 25px;
     position: relative;
@@ -98,14 +107,50 @@ body {
     display: none;
 }
 
+.error {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px red;
+}
+
 @media only screen and (max-width: 800px) {
     .info {
         margin-left: 0px;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search:focus {
+        width: 100%;
+    }
+
+    .filter {
+        flex-direction: column;
+    }
+
+    .filter > * {
+        width: 100%;
+    }
+
+    .card {
+        width: 50%;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .info {
         width: 100%;
     }
 }
