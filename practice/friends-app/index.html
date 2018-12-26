@@ -13,22 +13,27 @@
 <body>
     <div class="container">
         <div class="control">
-            <div class="sort">
-                sort
-            </div>
-            <div class="search">
-                <input type="search" placeholder="Search">
-            </div>
+            <input type="text" class="search" name="search" placeholder="Name..."><br>
+            <fieldset>
+                <legend>Options</legend>
+                <strong>By gender:</strong>
+                <input type="radio" name="gender" value="male"><label>Male</label>
+                <input type="radio" name="gender" value="female"><label>Female</label>
+                <input type="radio" name="gender" value="all" checked><label>All</label><br>
+                <strong>By name:</strong>
+                <input type="radio" name="sortName" value="a-z"> A-Z
+                <input type="radio" name="sortName" value="z-a"> Z-A<br>
+                <strong>By age:</strong>
+                <input type="radio" name="sortAge" value="a-z"> &#8593;
+                <input type="radio" name="sortAge" value="z-a"> &#8595;<br>
+                <button checked=true>Reset</button>
+            </fieldset>
         </div>
         <div class="main">
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">7</div>
-            <div class="card">8</div>
+            <div class="loading hide">
+                <div class="element"></div>
+                <div class="element"></div>
+            </div>
         </div>
     </div>
 </body>
