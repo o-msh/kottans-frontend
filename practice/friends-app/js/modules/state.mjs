@@ -9,7 +9,8 @@ export const state = {
         loading: null,
         search: null,
         filter: null,
-        radio: null
+        radio: null,
+        top: null
     },
     friends: [],
     filters: []
@@ -32,12 +33,15 @@ const initDomElements = () => {
     state.dom.loading = document.querySelector(".loader");
     state.dom.search = document.querySelector(".search");
     state.dom.filter = document.querySelector(".filter");
+    state.dom.top = document.querySelector(".top");
     state.dom.radio = Array.from(document.querySelectorAll("input[type=radio]"));
 };
 
 const initEventListener = () => {
     state.dom.search.addEventListener('input', searchHandler);
     state.dom.filter.addEventListener('click', sortHandler);
+    state.dom.top.addEventListener('click', f.scrollToTop);
+    window.onscroll = f.scrollWindowHandler;
 };
 
 export const init = () => {
