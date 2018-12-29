@@ -32,9 +32,9 @@
   - [x] 9. [OOP Exercise](https://o-msh.github.io/a-tiny-JS-world/)
     - Reviewed and approved by **@OleksiyRudenko**
     [Code base](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
-  - [ ] 10. Offline Web Applications (Optional)
+  - [x] 10. [Offline Web Applications](task_offline_web_app/offline_web.md)
   - [x] 11. [Memory pair game](https://o-msh.github.io/kottans-frontend/practice/memory-pair-game/)
     - Reviewed and approved by **@AMashoshyna**
     [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/memory-pair-game)
   - [ ] 12. Website Performance Optimization (Optional)
-  - [ ] 13. Friends App (In developing)
+  - [ ] 13. Friends App (PR)
