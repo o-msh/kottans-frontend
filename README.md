@@ -37,4 +37,6 @@
     - Reviewed and approved by **@AMashoshyna**
     [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/memory-pair-game)
   - [ ] 12. Website Performance Optimization (Optional)
-  - [ ] 13. Friends App (PR)
+  - [x] 13. [Friends App](http://o-msh.github.io/kottans-frontend/practice/friends-app/)
+    - Reviewed and approved by **@A-Ostrovnyy** and **@IgorKurkov**
+    [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/friends-app)
