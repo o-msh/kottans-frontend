@@ -3,8 +3,8 @@ const gulp = require('gulp');
 const del = require('del');
 
 const config = {
-    sourcePath: './src/*',
-    destinationPath: './dist'
+    sourcePath: './src/**/*',
+    destinationPath: './dist/'
 };
 
 function clean(cb) {
