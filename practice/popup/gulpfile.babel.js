@@ -2,15 +2,14 @@ import browserSync from 'browser-sync';
 import del from 'del';
 import sass from 'gulp-sass';
 import {
-    series,
     src,
     dest,
-    watch
+    watch,
+    parallel
 } from 'gulp';
 
 const config = {
     distPath: './dist',
-    watchPath: './src/**/*',
     htmlSource: './src/**/*.html',
     styleSource: './src/sass/**/*.scss',
     styleDestination: './dist/css/'
@@ -18,31 +17,31 @@ const config = {
 
 browserSync.create();
 
-const serveSync = cb => {
+const serveSync = () => {
     browserSync.init({
         server: {
             baseDir: config.distPath
-        }
+        },
+        notify: false
     });
-    cb();
-};
-
-const reloadBrowser = cb => {
-    browserSync.reload();
-    cb();
 };
 
 export const clean = () => del([config.distPath]);
 
 const buildHtml = () => src(config.htmlSource)
-    .pipe(dest(config.distPath));
+    .pipe(dest(config.distPath))
+    .pipe(browserSync.stream());
 
 const buildStyle = () => src(config.styleSource)
-    .pipe(sass())
-    .pipe(dest(config.styleDestination));
+    .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
+    .pipe(dest(config.styleDestination))
+    .pipe(browserSync.stream());
 
-const watchChanges = () => watch(config.watchPath, series(buildHtml, buildStyle, reloadBrowser));
+const watchChanges = () => {
+    watch(config.htmlSource, buildHtml);
+    watch(config.styleSource, buildStyle);
+};
 
-const build = cb => series(buildHtml, buildStyle, serveSync, watchChanges)(cb);
+const build = cb => parallel(buildHtml, buildStyle, serveSync, watchChanges)(cb);
 
 export default build; 
