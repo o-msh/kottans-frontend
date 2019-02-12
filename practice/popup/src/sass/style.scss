@@ -1,2 +1,91 @@
 @import "_reset";
-@import "_vars";
+
+@keyframes nav-apps {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    font: small arial,sans-serif;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    margin: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.nav__item .nav-apps__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.nav-apps__input:checked ~ .apps-wrapper {
+    display: block;
+}
+
+.nav-apps__input:focus ~ .nav-apps__label {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.nav-apps__label {
+    cursor: pointer;
+}
+
+.apps-wrapper {
+    display: none;
+    position: absolute;
+    width: 400px;
+    top: 40px;
+    right: 10px;
+    border: 1px solid #cccccc;
+    animation-name: nav-apps;
+    animation-timing-function: linear;
+    animation-duration: 0.3s;
+}
+
+.apps-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 115px;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+
+}
+
+.apps-wrapper__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apps-wrapper__app {
+    margin: 10px;
+    width: 30%;
+    height: 30px;
+    border: 1px solid red;
+}
