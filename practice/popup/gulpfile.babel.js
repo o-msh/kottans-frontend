@@ -12,7 +12,9 @@ const config = {
     distPath: './dist',
     htmlSource: './src/**/*.html',
     styleSource: './src/sass/**/*.scss',
-    styleDestination: './dist/css/'
+    styleDestination: './dist/css/',
+    imageSource: './src/img/**/*',
+    imageDestination: './dist/img/'
 };
 
 browserSync.create();
@@ -28,6 +30,9 @@ const serveSync = () => {
 
 export const clean = () => del([config.distPath]);
 
+const copyImages = () => src(config.imageSource)
+    .pipe(dest(config.imageDestination));
+
 const buildHtml = () => src(config.htmlSource)
     .pipe(dest(config.distPath))
     .pipe(browserSync.stream());
@@ -42,6 +47,6 @@ const watchChanges = () => {
     watch(config.styleSource, buildStyle);
 };
 
-const build = cb => parallel(buildHtml, buildStyle, serveSync, watchChanges)(cb);
+const build = cb => parallel(copyImages, buildHtml, buildStyle, serveSync, watchChanges)(cb);
 
 export default build; 
