@@ -28,7 +28,7 @@
     [Code base](https://github.com/o-msh/a-tiny-JS-world)
   - [x] 8. [Object Oriented JS](task_js_oop/js-oop.md)
     - Reviewed and approved by **@OleksiyRudenko**
-    [Demo](https://o-msh.github.io/frontend-nanodegree-arcade-game/) | [Code base](https://github.com/o-msh/frontend-nanodegree-arcade-game)
+    [Demo](https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
   - [x] 9. [OOP Exercise](https://o-msh.github.io/a-tiny-JS-world/)
     - Reviewed and approved by **@OleksiyRudenko**
     [Code base](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
