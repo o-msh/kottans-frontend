@@ -152,81 +152,13 @@ a {
 
 .app__icon {
   display: flex;
-  background: url("../img/services.png") no-repeat;
+  background: url("../img/icon.png") no-repeat;
   width: 60px;
   height: 60px;
 }
 
-.app__icon-drive {
-  background-position: 0 -2012px;
-}
-
-.app__icon-maps {
-  background-position: 0 -216px;
-}
-
-.app__icon-youtube {
-  background-position: 0 -567px;
-}
-
-.app__icon-gmail {
-  background-position: 0 -1118px;
-}
-
-.app__icon-translate {
-  background-position: 0 -1666px;
-}
-
-.app__icon-search {
-  background-position: 0 -1321px;
-}
-
-.app__icon-news {
-  background-position: 0 -1049px;
-}
-
-.app__icon-photo {
-  background-position: 0 -1526px;
-}
-
-.app__icon-plus {
-  background-position: 0 -424px;
-}
-
-.app__icon-calendar {
-  background-position: 0 -839px;
-}
-
-.app__icon-documents {
-  background-position: 0 -1459px;
-}
-
-.app__icon-hangouts {
-  background-position: 0 -1597px;
-}
-
-.app__icon-play {
-  background-position: 0 -2356px;
-}
-
-.app__icon-earth {
-  background-position: 0 -1873px;
-}
-
-.app__icon-blogger {
-  background-position: 0 -2081px;
-}
-
-.app__icon-jamboard {
-  background-position: 0 -910px;
-}
-
-.app__icon-collections {
-  background-position: 0 -1735px;
-}
-
-.app__icon-class {
-  background-position: 0 -634px;
+.app__icon-service {
+  background-position: 10px 0px;
 }
 
 .app__label-more {
@@ -269,7 +201,7 @@ a {
 
 .nav__item_icon_apps {
   display: flex;
-  background: url("../img/icons.png") no-repeat -135px -40px;
+  background: url("../img/services-icon.png") no-repeat;
   width: 25px;
   height: 25px;
   opacity: 0.5;
@@ -281,17 +213,15 @@ a {
 
 .nav__item_icon_notification {
   display: flex;
-  background: url("../img/icons.png") no-repeat -194px -21px;
+  background: url("../img/comments.png") no-repeat 2px 2px;
   width: 20px;
   height: 20px;
-  background-color: #000000;
-  border-radius: 50%;
   opacity: 0.5;
 }
 
 .nav__item_icon_user {
   display: flex;
-  background: url("../img/services.png") no-repeat -10px -2149px;
+  background: url("../img/anonymous-mask.png") no-repeat;
   width: 44px;
   height: 44px;
   zoom: 0.7;
