@@ -23,15 +23,15 @@
 
 ## Advanced Topics
 
-  - [x] 7. [A Tiny JS World](https://o-msh.github.io/a-tiny-JS-world/)
+  - [x] 7. A Tiny JS World (pre - OOP)
     - Reviewed and approved by **@OleksiyRudenko**
-    [Code base](https://github.com/o-msh/a-tiny-JS-world)
+    [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-pre-oop/)
   - [x] 8. [Object Oriented JS](task_js_oop/js-oop.md)
     - Reviewed and approved by **@OleksiyRudenko**
     [Demo](https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
-  - [x] 9. [OOP Exercise](https://o-msh.github.io/a-tiny-JS-world/)
+  - [x] 9. OOP Exercise (A Tiny JS World OOP)
     - Reviewed and approved by **@OleksiyRudenko**
-    [Code base](https://github.com/o-msh/a-tiny-JS-world/tree/gh-pages)
+    [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-oop/)
   - [x] 10. [Offline Web Applications](task_offline_web_app/offline_web.md)
   - [x] 11. [Memory pair game](https://o-msh.github.io/kottans-frontend/practice/memory-pair-game/)
     - Reviewed and approved by **@AMashoshyna**
