@@ -31,7 +31,8 @@ const serveSync = () => {
 export const clean = () => del([config.distPath]);
 
 const copyImages = () => src(config.imageSource)
-    .pipe(dest(config.imageDestination));
+    .pipe(dest(config.imageDestination))
+    .pipe(browserSync.stream());
 
 const buildHtml = () => src(config.htmlSource)
     .pipe(dest(config.distPath))
@@ -45,8 +46,9 @@ const buildStyle = () => src(config.styleSource)
 const watchChanges = () => {
     watch(config.htmlSource, buildHtml);
     watch(config.styleSource, buildStyle);
+    watch(config.imageSource, copyImages);
 };
 
-const build = cb => parallel(buildHtml, buildStyle, serveSync, watchChanges)(cb);
+const build = cb => parallel(buildHtml, buildStyle, copyImages, serveSync, watchChanges)(cb);
 
 export default build; 
