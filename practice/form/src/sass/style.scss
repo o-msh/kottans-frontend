@@ -1,1 +1,24 @@
 @import 'normalize';
+@import 'vars';
+
+body {
+    background-color: $background-color;
+}
+
+.header {
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__button {
+    text-transform: uppercase;
+    padding: 20px;
+    width: 10%;
+    background-color: transparent;
+    border: 2px solid #C9D0E1;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor:pointer;
+}

@@ -5,7 +5,8 @@ import {
     src,
     dest,
     watch,
-    parallel
+    parallel,
+    series
 } from 'gulp';
 
 const config = {
@@ -49,6 +50,6 @@ const watchChanges = () => {
     watch(config.imageSource, copyImages);
 };
 
-const build = cb => parallel(buildHtml, buildStyle, copyImages, serveSync, watchChanges)(cb);
+const build = cb => series(clean, parallel(buildHtml, buildStyle, copyImages, serveSync, watchChanges))(cb);
 
 export default build; 
