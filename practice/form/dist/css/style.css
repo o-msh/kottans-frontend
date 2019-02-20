@@ -339,22 +339,77 @@ template {
 
 body {
   background-color: #ECEEF4;
+  font-size: 12px;
+}
+
+.wrapper {
+  margin-top: 50px;
+  padding: 0px 150px 0px 150px;
 }
 
 .header {
   display: flex;
-  margin-top: 100px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__button {
-  text-transform: uppercase;
-  padding: 20px;
-  width: 10%;
-  background-color: transparent;
-  border: 2px solid #C9D0E1;
+  color: #A5ABC5;
+  border: 1px solid #C9D0E1;
+  min-width: 180px;
+  padding: 15px;
   overflow: hidden;
-  border-radius: 5px;
+  white-space: nowrap;
   cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 600;
+  position: relative;
+}
+
+.header__button--back::before {
+  content: '';
+  background-image: url("../img/arrow-left.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 25px;
+  top: 18px;
+}
+
+.header__button--sign-in::before {
+  content: '';
+  background-image: url("../img/user.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 30px;
+  top: 15px;
+}
+
+.main {
+  margin-top: 50px;
+  border: 1px solid #C9D0E1;
+  border-radius: 5px;
+  height: 250px;
+}
+
+.order-help-wrapper {
+  display: flex;
+  border-bottom: 1px solid #C9D0E1;
+}
+
+.order {
+  width: 70%;
+  height: 100px;
+  border-right: 1px solid #C9D0E1;
+}
+
+.help {
+  width: 30%;
+  height: 100px;
 }
