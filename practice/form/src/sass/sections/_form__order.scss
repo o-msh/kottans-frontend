@@ -1,6 +1,6 @@
 .form-order {
-    width: 70%;
     display: flex;
+    width: 70%;
     justify-content: space-around;
     border-right: 1px solid #C9D0E1;
 }
@@ -9,15 +9,12 @@
     width: 70%;
 }
 
-.order-details {
-    display: flex;
-    flex-wrap: wrap;
+.order-details__wrapper {
+    padding: 25px 50px 15px 100px;
 }
 
 .order-details__caption {
     width: 100%;
-    padding-left: 47px;
-    padding-top: 15px;
     position: relative;
 }
 
@@ -32,15 +29,20 @@
     position: absolute;
     width: 20px;
     height: 25px;
-    left: 20px;
-    top: 28px;
+    left: -35px;
+    top: -3px;
 }
 
 .order-items {
     display: flex;
+    padding-top: 15px;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.order-item {
+    width: 20%;
 }
 
 .order-item__caption {

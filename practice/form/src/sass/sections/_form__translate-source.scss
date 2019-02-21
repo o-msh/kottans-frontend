@@ -1,0 +1,25 @@
+.form__translate-source {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.translate-source__caption {
+    width: 100%;
+    text-align: center;
+}
+
+.translate-source__caption_text {
+    letter-spacing: 0.2em;
+    font-size: 23px;
+    color: #92ACC4;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E6E6EB;
+    padding-bottom: 10px;
+}
+
+.translate-source__radio-wrapper {
+    border: 1px solid black;
+    width: 100%;
+}
