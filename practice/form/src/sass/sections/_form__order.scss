@@ -1,0 +1,80 @@
+.form-order {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    border-right: 1px solid #C9D0E1;
+}
+
+.form-order__details {
+    width: 70%;
+}
+
+.order-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-details__caption {
+    width: 100%;
+    padding-left: 47px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.order-details__caption--title {
+    text-transform: uppercase;
+}
+
+.order-details__caption--title::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 28px;
+    width: 30px;
+    height: 42px;
+    background-image: url('../img/order.png');
+    background-repeat: no-repeat;
+}
+
+.order-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.order-item__caption {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.order-item__value {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #A5ABC5;
+}
+
+.form-order-buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-order-buttons__button {
+    @include button;
+    width: 70%;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form-order-buttons__button--place-order {
+    background-color: #5FCAC6;
+    color: #FFFFFF;
+}
+
+.form-order-buttons__button--print-quote {
+    background-color: #F7F7FA;
+}

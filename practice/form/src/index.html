@@ -13,19 +13,49 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <button class="header__button header__button--back">go back</button>
+            <button class="header__button header__button--back"><span>go back</span></button>
             <a href="#" class="header__logo"><img src="img/logo.png" alt="Logo"></a>
-            <button class="header__button header__button--sign-in">sign in</button>
+            <button class="header__button header__button--sign-in"><span>sign in</span></button>
         </header>
         <main class="main">
-            <div class="order-help-wrapper">
-                <section class="order">
-                    <h2>your order</h2>
+            <form action="#" class="form">
+                <section class="form__order form-order">
+                    <div class="form-order__details order-details">
+                        <div class="order-details__caption">
+                            <h3 class="order-details__caption--title">your order</h3>
+                        </div>
+                        <div class="order-details__items order-items">
+                            <div class="order-items__item order-item">
+                                <div class="order-item__caption">items</div>
+                                <div class="order-item__value">2 documents</div>
+                            </div>
+                            <div class="order-items__item order-item">
+                                <div class="order-item__caption">details</div>
+                                <div class="order-item__value">2 languages</div>
+                            </div>
+                            <div class="order-items__item order-item">
+                                <div class="order-item__caption">price</div>
+                                <div class="order-item__value">$ 696.06</div>
+                            </div>
+                            <div class="order-items__item order-item">
+                                <div class="order-item__caption">delivery</div>
+                                <div class="order-item__value">48 hours*</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-order__buttons form-order-buttons">
+                        <button class="form-order-buttons__button form-order-buttons__button--place-order"><span>place
+                                order</span></button>
+                        <button class="form-order-buttons__button form-order-buttons__button--print-quote"><span>print
+                                a quote</span></button>
+                    </div>
                 </section>
-                <section class="help">
-                    <h2>help center</h2>
+                <section class="form__help form-help">
+                    <div class="form-help__wrapper">
+                        <h2>help center</h2>
+                    </div>
                 </section>
-            </div>
+            </form>
         </main>
     </div>
 </body>

@@ -1,0 +1,8 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #C9D0E1;
+}
+
+@import 'sections/form__order';
+@import 'sections/form__help';

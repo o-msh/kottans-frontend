@@ -339,12 +339,14 @@ template {
 
 body {
   background-color: #ECEEF4;
-  font-size: 12px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #6E768F;
 }
 
 .wrapper {
   margin-top: 50px;
-  padding: 0px 150px 0px 150px;
+  padding: 0px 250px 0px 250px;
 }
 
 .header {
@@ -357,16 +359,17 @@ body {
 .header__button {
   color: #A5ABC5;
   border: 1px solid #C9D0E1;
-  min-width: 180px;
-  padding: 15px;
+  padding: 20px;
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 16px;
   text-transform: uppercase;
   background-color: transparent;
   font-weight: 600;
   position: relative;
+  min-width: 180px;
 }
 
 .header__button--back::before {
@@ -377,7 +380,7 @@ body {
   width: 100%;
   height: 15px;
   left: 25px;
-  top: 18px;
+  top: 25px;
 }
 
 .header__button--sign-in::before {
@@ -388,28 +391,111 @@ body {
   width: 100%;
   height: 15px;
   left: 30px;
-  top: 15px;
+  top: 22px;
 }
 
 .main {
   margin-top: 50px;
   border: 1px solid #C9D0E1;
   border-radius: 5px;
-  height: 250px;
+  background-color: #FFFFFF;
+  height: 500px;
 }
 
-.order-help-wrapper {
+.form {
   display: flex;
+  flex-direction: row;
   border-bottom: 1px solid #C9D0E1;
 }
 
-.order {
+.form-order {
   width: 70%;
-  height: 100px;
+  display: flex;
+  justify-content: space-around;
   border-right: 1px solid #C9D0E1;
 }
 
-.help {
+.form-order__details {
+  width: 70%;
+}
+
+.order-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.order-details__caption {
+  width: 100%;
+  padding-left: 47px;
+  padding-top: 15px;
+  position: relative;
+}
+
+.order-details__caption--title {
+  text-transform: uppercase;
+}
+
+.order-details__caption--title::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  width: 30px;
+  height: 42px;
+  background-image: url("../img/order.png");
+  background-repeat: no-repeat;
+}
+
+.order-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.order-item__caption {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.order-item__value {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #A5ABC5;
+}
+
+.form-order-buttons {
   width: 30%;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-order-buttons__button {
+  color: #A5ABC5;
+  border: 1px solid #C9D0E1;
+  padding: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 70%;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-order-buttons__button--place-order {
+  background-color: #5FCAC6;
+  color: #FFFFFF;
+}
+
+.form-order-buttons__button--print-quote {
+  background-color: #F7F7FA;
+}
+
+.form-help {
+  width: 30%;
 }
