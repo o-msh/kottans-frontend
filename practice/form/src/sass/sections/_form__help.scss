@@ -1,3 +1,40 @@
 .form-help {
     width: 30%;
 }
+
+.form-help__wrapper {
+    padding: 15px 50px 15px 50px;
+    text-align: justify;
+}
+
+.form-help__caption {
+    position: relative;
+}
+
+.form-help__title {
+    text-transform: uppercase;
+}
+
+.form-help__title::before {
+    content: '';
+    background-image: url('../img/circle.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    left: -30px;
+}
+
+.form-help__about {
+    color: #A5ABC5;
+    line-height: 1.5;
+}
+
+.form-help__address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 600;
+}

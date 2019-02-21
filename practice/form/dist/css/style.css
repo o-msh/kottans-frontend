@@ -340,13 +340,18 @@ template {
 body {
   background-color: #ECEEF4;
   font-family: sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #6E768F;
+}
+
+a {
+  color: #6E768F;
+  text-decoration: none;
 }
 
 .wrapper {
   margin-top: 50px;
-  padding: 0px 250px 0px 250px;
+  padding: 0px 150px 0px 150px;
 }
 
 .header {
@@ -364,7 +369,6 @@ body {
   white-space: nowrap;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
   text-transform: uppercase;
   background-color: transparent;
   font-weight: 600;
@@ -372,7 +376,7 @@ body {
   min-width: 180px;
 }
 
-.header__button--back::before {
+.header__button_back::before {
   content: '';
   background-image: url("../img/arrow-left.png");
   background-repeat: no-repeat;
@@ -380,10 +384,10 @@ body {
   width: 100%;
   height: 15px;
   left: 25px;
-  top: 25px;
+  top: 22px;
 }
 
-.header__button--sign-in::before {
+.header__button_sign_in::before {
   content: '';
   background-image: url("../img/user.png");
   background-repeat: no-repeat;
@@ -391,7 +395,7 @@ body {
   width: 100%;
   height: 15px;
   left: 30px;
-  top: 22px;
+  top: 19px;
 }
 
 .main {
@@ -431,19 +435,19 @@ body {
   position: relative;
 }
 
-.order-details__caption--title {
+.order-details__caption_text {
   text-transform: uppercase;
 }
 
-.order-details__caption--title::before {
+.order-details__caption_text::before {
   content: '';
-  position: absolute;
-  left: 20px;
-  top: 28px;
-  width: 30px;
-  height: 42px;
   background-image: url("../img/order.png");
   background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  left: 20px;
+  top: 28px;
 }
 
 .order-items {
@@ -480,22 +484,58 @@ body {
   white-space: nowrap;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 16px;
   width: 70%;
   margin: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.form-order-buttons__button--place-order {
+.form-order-buttons__button_place_order {
   background-color: #5FCAC6;
   color: #FFFFFF;
 }
 
-.form-order-buttons__button--print-quote {
+.form-order-buttons__button_print_quote {
   background-color: #F7F7FA;
 }
 
 .form-help {
   width: 30%;
+}
+
+.form-help__wrapper {
+  padding: 15px 50px 15px 50px;
+  text-align: justify;
+}
+
+.form-help__caption {
+  position: relative;
+}
+
+.form-help__title {
+  text-transform: uppercase;
+}
+
+.form-help__title::before {
+  content: '';
+  background-image: url("../img/circle.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -3px;
+  left: -30px;
+}
+
+.form-help__about {
+  color: #A5ABC5;
+  line-height: 1.5;
+}
+
+.form-help__address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 600;
 }

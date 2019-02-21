@@ -21,19 +21,19 @@
     position: relative;
 }
 
-.order-details__caption--title {
+.order-details__caption_text {
     text-transform: uppercase;
 }
 
-.order-details__caption--title::before {
+.order-details__caption_text::before {
     content: '';
-    position: absolute;
-    left: 20px;
-    top: 28px;
-    width: 30px;
-    height: 42px;
     background-image: url('../img/order.png');
     background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    left: 20px;
+    top: 28px;
 }
 
 .order-items {
@@ -70,11 +70,11 @@
     font-weight: bold;
 }
 
-.form-order-buttons__button--place-order {
+.form-order-buttons__button_place_order {
     background-color: #5FCAC6;
     color: #FFFFFF;
 }
 
-.form-order-buttons__button--print-quote {
+.form-order-buttons__button_print_quote {
     background-color: #F7F7FA;
 }
