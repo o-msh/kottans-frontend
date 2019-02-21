@@ -406,8 +406,9 @@ a {
   height: 500px;
 }
 
-.form {
+.form__header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   border-bottom: 1px solid #C9D0E1;
 }
@@ -500,7 +501,7 @@ a {
 }
 
 .form-help {
-  width: 30%;
+  width: 29%;
 }
 
 .form-help__wrapper {
@@ -538,4 +539,24 @@ a {
   justify-content: space-between;
   font-style: normal;
   font-weight: 600;
+}
+
+.form__translate-source {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.translate-source__caption {
+  width: 100%;
+  text-align: center;
+}
+
+.translate-source__caption_text {
+  letter-spacing: 0.1em;
+  color: #92ACC4;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E6E6EB;
+  padding-bottom: 10px;
 }

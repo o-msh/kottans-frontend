@@ -1,8 +1,10 @@
-.form {
+.form__header {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     border-bottom: 1px solid #C9D0E1;
 }
 
 @import 'sections/form__order';
 @import 'sections/form__help';
+@import 'sections/form__translate-source'
