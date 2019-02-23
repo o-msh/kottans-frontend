@@ -22,25 +22,27 @@
                 <div class="form__header">
                     <section class="form__order form-order">
                         <div class="form-order__details order-details">
-                            <div class="order-details__caption">
-                                <h3 class="order-details__caption_text">your order</h3>
-                            </div>
-                            <div class="order-details__items order-items">
-                                <div class="order-items__item order-item">
-                                    <div class="order-item__caption">items</div>
-                                    <div class="order-item__value">2 documents</div>
+                            <div class="order-details__wrapper">
+                                <div class="order-details__caption">
+                                    <h3 class="order-details__caption_text"><span>your order</span></h3>
                                 </div>
-                                <div class="order-items__item order-item">
-                                    <div class="order-item__caption">details</div>
-                                    <div class="order-item__value">2 languages</div>
-                                </div>
-                                <div class="order-items__item order-item">
-                                    <div class="order-item__caption">price</div>
-                                    <div class="order-item__value">$ 696.06</div>
-                                </div>
-                                <div class="order-items__item order-item">
-                                    <div class="order-item__caption">delivery</div>
-                                    <div class="order-item__value">48 hours*</div>
+                                <div class="order-details__items order-items">
+                                    <div class="order-items__item order-item">
+                                        <div class="order-item__caption">items</div>
+                                        <div class="order-item__value">2 documents</div>
+                                    </div>
+                                    <div class="order-items__item order-item">
+                                        <div class="order-item__caption">details</div>
+                                        <div class="order-item__value">2 languages</div>
+                                    </div>
+                                    <div class="order-items__item order-item">
+                                        <div class="order-item__caption">price</div>
+                                        <div class="order-item__value">$ 696.06</div>
+                                    </div>
+                                    <div class="order-items__item order-item">
+                                        <div class="order-item__caption">delivery</div>
+                                        <div class="order-item__value">48 hours*</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +58,7 @@
                     <section class="form__help form-help">
                         <div class="form-help__wrapper">
                             <div class="form-help__caption">
-                                <h3 class="form-help__title">help center</h3>
+                                <h3 class="form-help__title"><span>help center</span></h3>
                             </div>
                             <div class="form-help__text">
                                 <div class="form-help__about">
@@ -65,7 +67,7 @@
                                     by phone or email.
                                 </div>
                                 <address class="form-help__address">
-                                    <p><a href="#">+971(0)555 555</a></p>
+                                    <p><a href="#">+971 (0) 555 555</a></p>
                                     <p><a href="mailto:help@qtest.com">help@qtest.com</a></p>
                                 </address>
                             </div>
@@ -73,7 +75,35 @@
                     </section>
                 </div>
                 <section class="form__translate-source translate-source">
-                    <div class="translate-source__caption"><h2><span class="translate-source__caption_text">select what you want to translate</h2></span></div>
+                    <div class="translate-source__caption translate-caption">
+                        <h2><span class="translate-caption__text">select what you want to translate</h2></span>
+                    </div>
+                    <div class="translate-source__radio-wrapper radio-choice">
+                        <label class="radio-choice__label">
+                            <input type="radio" name="translate-source" value="website"
+                                class="radio-choice__type_visually-hidden" required>
+                            <div class="radio-choice__wrapper">
+                                <div class="radio-choice__image_website"></div>
+                                <div class="radio-choise__text">website</div>
+                            </div>
+                        </label>
+                        <label class="radio-choice__label">
+                            <input type="radio" name="translate-source" value="website"
+                                class="radio-choice__type_visually-hidden" required>
+                            <div class="radio-choice__wrapper">
+                                <div class="radio-choice__image_website"></div>
+                                <div class="radio-choise__text">website</div>
+                            </div>
+                        </label>
+                        <label class="radio-choice__label">
+                            <input type="radio" name="translate-source" value="website"
+                                class="radio-choice__type_visually-hidden" required>
+                            <div class="radio-choice__wrapper">
+                                <div class="radio-choice__image_website"></div>
+                                <div class="radio-choise__text">website</div>
+                            </div>
+                        </label>
+                    </div>
                 </section>
             </form>
         </main>
