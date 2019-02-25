@@ -526,7 +526,7 @@ a {
   width: 20px;
   height: 20px;
   top: -3px;
-  left: -34px;
+  left: -35px;
 }
 
 .form-help__about {
@@ -567,7 +567,8 @@ a {
 
 .translate-source__radio-wrapper {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 85%;
 }
 
