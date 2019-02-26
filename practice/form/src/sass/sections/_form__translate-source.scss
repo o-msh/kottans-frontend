@@ -69,7 +69,19 @@
 }
 
 .radio-choice__image_website {
-    content: url('../img/translate-website.png');
+    content: url('../img/translate-website.jpg');
+    width: 100px;
+    height: 100px;
+}
+
+.radio-choice__image_documents {
+    content: url('../img/translate-documents.jpg');
+    width: 100px;
+    height: 100px;
+}
+
+.radio-choice__image_social-account {
+    content: url('../img/translate-social.jpg');
     width: 100px;
     height: 100px;
 }

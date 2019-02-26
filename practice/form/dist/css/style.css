@@ -350,11 +350,13 @@ a {
 }
 
 .wrapper {
-  margin-top: 50px;
-  padding: 0px 100px 0px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
 }
 
 .header {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -613,7 +615,19 @@ a {
 }
 
 .radio-choice__image_website {
-  content: url("../img/translate-website.png");
+  content: url("../img/translate-website.jpg");
+  width: 100px;
+  height: 100px;
+}
+
+.radio-choice__image_documents {
+  content: url("../img/translate-documents.jpg");
+  width: 100px;
+  height: 100px;
+}
+
+.radio-choice__image_social-account {
+  content: url("../img/translate-social.jpg");
   width: 100px;
   height: 100px;
 }
