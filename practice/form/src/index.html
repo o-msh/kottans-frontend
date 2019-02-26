@@ -72,37 +72,48 @@
                         </div>
                     </section>
                 </div>
-                <section class="form__translate-source translate-source">
-                    <div class="translate-source__caption translate-caption">
-                        <h2><span class="translate-caption__text">select what you want to translate</h2></span>
-                    </div>
-                    <div class="translate-source__radio-wrapper radio-choice">
-                        <label class="radio-choice__label">
-                            <input type="radio" name="translate-source" value="website" class="radio-choice__type_visually-hidden"
-                                required>
-                            <div class="radio-choice__wrapper">
-                                <div class="radio-choice__image_website"></div>
-                                <div class="radio-choise__text">website</div>
-                            </div>
+                <div class="form__sections-wrapper">
+                    <section class="form__translate translate-section">
+                        <div class="translate-section__caption translate-caption">
+                            <h2><span class="translate-caption__text">select what you want to translate</h2></span>
+                        </div>
+                        <div class="translate-section__radio-wrapper radio-choice">
+                            <label class="radio-choice__label">
+                                <input type="radio" name="translate-section" value="website" class="radio-choice__type_visually-hidden"
+                                    required>
+                                <div class="radio-choice__wrapper">
+                                    <div class="radio-choice__image_website"></div>
+                                    <div class="radio-choise__text">website</div>
+                                </div>
+                            </label>
+                            <label class="radio-choice__label">
+                                <input type="radio" name="translate-section" value="documents" class="radio-choice__type_visually-hidden"
+                                    required checked>
+                                <div class="radio-choice__wrapper">
+                                    <div class="radio-choice__image_documents"></div>
+                                    <div class="radio-choise__text">documents</div>
+                                </div>
+                            </label>
+                            <label class="radio-choice__label">
+                                <input type="radio" name="translate-section" value="social-account" class="radio-choice__type_visually-hidden"
+                                    required>
+                                <div class="radio-choice__wrapper">
+                                    <div class="radio-choice__image_social-account"></div>
+                                    <div class="radio-choise__text">social account</div>
+                                </div>
+                            </label>
+                        </div>
+                    </section>
+                    <section class="form__upload upload-section">
+                        <h2 class="upload-section__title">upload your documents</h2>
+                        <label class="upload-section__label">
+                            <input type="file" name="file" class="upload-section__input">
+                            <div class="upload-section__label-text">upload a new file</div>
                         </label>
-                        <label class="radio-choice__label">
-                            <input type="radio" name="translate-source" value="website" class="radio-choice__type_visually-hidden"
-                                required checked>
-                            <div class="radio-choice__wrapper">
-                                <div class="radio-choice__image_documents"></div>
-                                <div class="radio-choise__text">documents</div>
-                            </div>
-                        </label>
-                        <label class="radio-choice__label">
-                            <input type="radio" name="translate-source" value="website" class="radio-choice__type_visually-hidden"
-                                required>
-                            <div class="radio-choice__wrapper">
-                                <div class="radio-choice__image_social-account"></div>
-                                <div class="radio-choise__text">social account</div>
-                            </div>
-                        </label>
-                    </div>
-                </section>
+                        <div class="upload-section__items">
+                        </div>
+                    </section>
+                </div>
             </form>
         </main>
     </div>

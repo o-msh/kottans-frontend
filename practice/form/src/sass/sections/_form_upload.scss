@@ -1,0 +1,51 @@
+.upload-section {
+    @include section;
+}
+
+.upload-section__title {
+    @include section-title(1);
+}
+
+.upload-section__title::after {
+    content: '(Doc, Docx Text, PDF, Markdown)';
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.upload-section__label {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.upload-section__label-text {
+    @include button;
+    position: relative;
+    padding-left: 55px;
+    font-weight: 600;
+}
+
+.upload-section__label-text::first-letter {
+    text-transform: uppercase;
+}
+
+.upload-section__label-text::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background-image: url('../img/cloud.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+.upload-section__input {
+    @include visually-hidden;
+}
+
+.upload-section__items {
+    border: 1px solid #C9D0E1;
+}

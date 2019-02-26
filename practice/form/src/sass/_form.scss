@@ -5,6 +5,12 @@
     border-bottom: 1px solid #C9D0E1;
 }
 
+.form__sections-wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
 @import 'sections/form__order';
 @import 'sections/form__help';
-@import 'sections/form__translate-source'
+@import 'sections/form__translate';
+@import 'sections/form_upload';
