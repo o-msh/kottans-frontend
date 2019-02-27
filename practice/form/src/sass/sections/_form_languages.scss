@@ -1,0 +1,56 @@
+.languages-section {
+    @include section;
+}
+
+.languages-section__title {
+    @include section-title(2);
+}
+
+.select-wrapper {
+    margin-bottom: 40px;
+}
+
+.select-wrapper__label {
+    display: flex;
+    align-items: center;
+}
+
+.select-wrapper__title {
+    margin-right: 15px;
+    width: 20px;
+    text-align: right;
+}
+
+.select-wrapper__select {
+    -webkit-appearance: none;
+    border: 1px solid #C9D0E1;
+    padding: 15px 50px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 15px;
+    color: #95a1c1;
+    cursor: pointer;
+}
+
+.select-wrapper__btn {
+    @include button;
+}
+
+.select-wrapper__select, .select-wrapper__btn {
+    margin-right: 20px;
+}
+
+// .select-wrapper__select::after {
+//     position: absolute;
+//     font-size: 18px;
+//     top: 0px;
+//     right: 0px;
+//     content: "";
+//     color: rgb(159, 163, 196);
+//     line-height: 44px;
+//     width: 50px;
+//     text-align: center;
+//     height: 50px;
+//     pointer-events: none;
+//     border-left: 1px solid rgb(171, 180, 205);
+// }

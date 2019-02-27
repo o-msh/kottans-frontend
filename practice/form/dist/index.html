@@ -72,7 +72,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="form__sections-wrapper">
+                <div class="form__sections form__sections-wrapper">
                     <section class="form__translate translate-section">
                         <div class="translate-section__caption translate-caption">
                             <h3><span class="translate-caption__text">select what you want to translate</span></h3>
@@ -128,8 +128,46 @@
                             </div>
                             <div class="upload-section__column upload-section__column_remove">
                                 <div class="upload-section__row upload-section__row_caption">remove</div>
-                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"></button></div>
-                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"></button></div>
+                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"
+                                        type="button"></button></div>
+                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"
+                                        type="button"></button></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form__languages languages-section">
+                        <h3 class="languages-section__title">choose your languages pairings</h3>
+                        <div class="languages-section__selects-wrapper selects-wrapper">
+                            <div class="selects-wrapper__from select-wrapper">
+                                <label class="select-wrapper__label">
+                                    <span class="select-wrapper__title">from</span>
+                                    <div class="select-wrapper__wrapper">
+                                        <select name="language-from" class="select-wrapper__select">
+                                            <option value="english">english</option>
+                                            <option value="ukrainian">ukrainian</option>
+                                            <option value="poland">poland</option>
+                                        </select>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="selects-wrapper__to select-wrapper">
+                                <label class="select-wrapper__label">
+                                    <span class="select-wrapper__title">to</span>
+                                    <div class="select-wrapper__wrapper">
+                                        <select name="language-to" class="select-wrapper__select">
+                                            <option value="english">arabic</option>
+                                            <option value="ukrainian">ukrainian</option>
+                                            <option value="poland">poland</option>
+                                        </select>
+                                        <select name="language-to" class="select-wrapper__select">
+                                            <option value="english">kurdish</option>
+                                            <option value="ukrainian">ukrainian</option>
+                                            <option value="poland">poland</option>
+                                        </select>
+                                        <button class="select-wrapper__btn select-wrapper__btn_delete">delete</button>
+                                        <button class="select-wrapper__btn select-wrapper__btn_add">add</button>
+                                    </div>
+                                </label>
                             </div>
                         </div>
                     </section>
