@@ -23,15 +23,15 @@
     justify-content: space-between;
 }
 
-.radio-choice__type_visually-hidden {
+.radio-choice__input_visually-hidden {
     @include visually-hidden;    
 }
 
-.radio-choice__type_visually-hidden:checked ~ .radio-choice__wrapper {
+.radio-choice__input_visually-hidden:checked ~ .radio-choice__wrapper {
     outline: 5px solid #59A9E4;
 }
 
-.radio-choice__type_visually-hidden:checked ~ .radio-choice__wrapper::after {
+.radio-choice__input_visually-hidden:checked ~ .radio-choice__wrapper::after {
     content: '';
     width: 32px;
     height: 32px;
@@ -71,7 +71,7 @@
     height: 100px;
 }
 
-.radio-choise__text {
+.radio-choice__text {
     text-align: center;
     margin-top: 25px;
     text-transform: capitalize;

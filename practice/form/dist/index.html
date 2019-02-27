@@ -75,42 +75,62 @@
                 <div class="form__sections-wrapper">
                     <section class="form__translate translate-section">
                         <div class="translate-section__caption translate-caption">
-                            <h2><span class="translate-caption__text">select what you want to translate</h2></span>
+                            <h3><span class="translate-caption__text">select what you want to translate</span></h3>
                         </div>
                         <div class="translate-section__radio-wrapper radio-choice">
                             <label class="radio-choice__label">
-                                <input type="radio" name="translate-section" value="website" class="radio-choice__type_visually-hidden"
+                                <input type="radio" name="translate-section" value="website" class="radio-choice__input_visually-hidden"
                                     required>
                                 <div class="radio-choice__wrapper">
                                     <div class="radio-choice__image_website"></div>
-                                    <div class="radio-choise__text">website</div>
+                                    <div class="radio-choice__text">website</div>
                                 </div>
                             </label>
                             <label class="radio-choice__label">
-                                <input type="radio" name="translate-section" value="documents" class="radio-choice__type_visually-hidden"
+                                <input type="radio" name="translate-section" value="documents" class="radio-choice__input_visually-hidden"
                                     required checked>
                                 <div class="radio-choice__wrapper">
                                     <div class="radio-choice__image_documents"></div>
-                                    <div class="radio-choise__text">documents</div>
+                                    <div class="radio-choice__text">documents</div>
                                 </div>
                             </label>
                             <label class="radio-choice__label">
-                                <input type="radio" name="translate-section" value="social-account" class="radio-choice__type_visually-hidden"
+                                <input type="radio" name="translate-section" value="social-account" class="radio-choice__input_visually-hidden"
                                     required>
                                 <div class="radio-choice__wrapper">
                                     <div class="radio-choice__image_social-account"></div>
-                                    <div class="radio-choise__text">social account</div>
+                                    <div class="radio-choice__text">social account</div>
                                 </div>
                             </label>
                         </div>
                     </section>
                     <section class="form__upload upload-section">
-                        <h2 class="upload-section__title">upload your documents</h2>
+                        <h3 class="upload-section__title">upload your documents</h3>
                         <label class="upload-section__label">
                             <input type="file" name="file" class="upload-section__input">
                             <div class="upload-section__label-text">upload a new file</div>
                         </label>
-                        <div class="upload-section__items">
+                        <div class="upload-section__list-wrapper">
+                            <div class="upload-section__column upload-section__column_filename">
+                                <div class="upload-section__row upload-section__row_caption">file name</div>
+                                <div class="upload-section__row upload-section__row_value">business_operations.docx</div>
+                                <div class="upload-section__row upload-section__row_value">business_operations.docx</div>
+                            </div>
+                            <div class="upload-section__column upload-section__column_file_size">
+                                <div class="upload-section__row upload-section__row_caption">file size</div>
+                                <div class="upload-section__row upload-section__row_value">78kb</div>
+                                <div class="upload-section__row upload-section__row_value">26kb</div>
+                            </div>
+                            <div class="upload-section__column upload-section__column_number_words">
+                                <div class="upload-section__row upload-section__row_caption">number of words</div>
+                                <div class="upload-section__row upload-section__row_value">842</div>
+                                <div class="upload-section__row upload-section__row_value">2,326</div>
+                            </div>
+                            <div class="upload-section__column upload-section__column_remove">
+                                <div class="upload-section__row upload-section__row_caption">remove</div>
+                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"></button></div>
+                                <div class="upload-section__row upload-section__row_value"><button class="upload-section__row_delete"></button></div>
+                            </div>
                         </div>
                     </section>
                 </div>

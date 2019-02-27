@@ -38,7 +38,7 @@
     background-image: url('../img/cloud.png');
     background-repeat: no-repeat;
     position: absolute;
-    top: 20px;
+    top: 22px;
     left: 35px;
 }
 
@@ -46,6 +46,58 @@
     @include visually-hidden;
 }
 
-.upload-section__items {
+.upload-section__list-wrapper {
     border: 1px solid #C9D0E1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    color: #95a1c1;
+    border-radius: 5px;
 }
+
+.upload-section__column {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-section__row {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.upload-section__column_remove > .upload-section__row_value {
+    justify-content: center;
+}
+
+.upload-section__column_filename > .upload-section__row_value {
+    position: relative;
+    padding-left: 40px;
+}
+
+.upload-section__column_filename > .upload-section__row_value::before {
+    content: '';
+    position: absolute;
+    background-image: url('../img/docx-logo.png');
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 25px;
+    left: 0px;
+    top: 10px;
+}
+
+.upload-section__row_caption {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.upload-section__row_delete {
+    background-image: url('../img/remove.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
