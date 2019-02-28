@@ -18,8 +18,9 @@
 }
 
 .select-wrapper__label::after {
-    content: "\f0dd";
-    font-family: FontAwesome;
+    content: "";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     line-height: 42px;
     top: 0;

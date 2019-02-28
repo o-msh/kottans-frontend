@@ -12,7 +12,10 @@ import {
 const config = {
     distPath: './dist',
     htmlSource: './src/**/*.html',
-    styleSource: './src/sass/**/*.scss',
+    sassSource: './src/sass/**/*.scss',
+    cssSource: './src/css/**/*.css',
+    webFontsSource: './src/webfonts/**/*',
+    webFontsDestination: './dist/webfonts',
     styleDestination: './dist/css/',
     imageSource: './src/img/**/*',
     imageDestination: './dist/img/'
@@ -39,17 +42,25 @@ const buildHtml = () => src(config.htmlSource)
     .pipe(dest(config.distPath))
     .pipe(browserSync.stream());
 
-const buildStyle = () => src(config.styleSource)
+const buildStyle = () => src(config.sassSource)
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(dest(config.styleDestination))
     .pipe(browserSync.stream());
 
+const copyCss = () => src(config.cssSource)
+    .pipe(dest(config.styleDestination));
+
+const copyWebFonts = () => src(config.webFontsSource)
+    .pipe(dest(config.webFontsDestination));
+
+export const buildFontAwesome = cb => parallel(copyCss, copyWebFonts)(cb);
+
 const watchChanges = () => {
     watch(config.htmlSource, buildHtml);
-    watch(config.styleSource, buildStyle);
+    watch(config.sassSource, buildStyle);
     watch(config.imageSource, copyImages);
 };
 
-const build = cb => series(clean, parallel(buildHtml, buildStyle, copyImages, serveSync, watchChanges))(cb);
+const build = cb => series(clean, parallel(buildFontAwesome, buildHtml, buildStyle, copyImages, serveSync, watchChanges))(cb);
 
 export default build; 
