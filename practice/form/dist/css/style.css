@@ -387,7 +387,7 @@ a {
   width: 100%;
   height: 15px;
   left: 25px;
-  top: 22px;
+  top: 25px;
 }
 
 .header__button_sign_in::before {
@@ -398,7 +398,7 @@ a {
   width: 100%;
   height: 15px;
   left: 30px;
-  top: 19px;
+  top: 22px;
 }
 
 .main {
@@ -406,7 +406,7 @@ a {
   border: 1px solid #C9D0E1;
   border-radius: 5px;
   background-color: #FFFFFF;
-  height: 1600px;
+  height: 2600px;
 }
 
 .form__header {
@@ -815,43 +815,48 @@ a {
   line-height: 40px;
 }
 
-.select-wrapper {
-  margin-bottom: 40px;
+.languages-container {
+  display: flex;
+  color: #95a1c1;
 }
 
 .select-wrapper__label {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.select-wrapper__label::after {
+  content: "\f0dd";
+  font-family: FontAwesome;
+  position: absolute;
+  line-height: 42px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  border-left: 1px solid #C9D0E1;
+  width: 50px;
+  height: 100%;
+  font-size: 15px;
+  pointer-events: none;
 }
 
 .select-wrapper__title {
-  margin-right: 15px;
-  width: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 30px;
+  width: 35px;
   text-align: right;
 }
 
 .select-wrapper__select {
+  text-transform: capitalize;
   -webkit-appearance: none;
   border: 1px solid #C9D0E1;
-  padding: 15px 50px;
+  padding: 15px 80px 15px 45px;
   border-radius: 5px;
   background-color: #f7f7f7;
   font-size: 15px;
   color: #95a1c1;
   cursor: pointer;
-}
-
-.select-wrapper__btn {
-  color: #95a1c1;
-  border: 1px solid #C9D0E1;
-  padding: 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.select-wrapper__select, .select-wrapper__btn {
-  margin-right: 20px;
 }
