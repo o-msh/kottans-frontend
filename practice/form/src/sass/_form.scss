@@ -3,6 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
     border-bottom: 1px solid #C9D0E1;
+    @media screen and (max-width: 1080px) {
+        flex-direction: column;
+    }
 }
 
 .form__sections-wrapper {

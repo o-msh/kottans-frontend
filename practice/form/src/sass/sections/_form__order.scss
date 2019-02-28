@@ -3,10 +3,19 @@
     width: 70%;
     justify-content: space-around;
     border-right: 1px solid #C9D0E1;
+    @media screen and (max-width: 1080px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 777px) {
+        flex-direction: column;
+    }
 }
 
 .form-order__details {
     width: 70%;
+    @media screen and (max-width: 777px) {
+        width: 100%;
+    }
 }
 
 .order-details__wrapper {
@@ -39,10 +48,18 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
+    @media screen and (max-width: 550) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .order-item {
     width: 20%;
+    @media screen and (max-width: 550px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .order-item__caption {
@@ -54,6 +71,10 @@
     margin-top: 10px;
     font-weight: 600;
     color: #A5ABC5;
+    @media screen and (max-width: 550px) {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
 }
 
 .form-order-buttons {
@@ -62,6 +83,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 777px) {
+        width: 100%;
+    }
 }
 
 .form-order-buttons__button {
@@ -70,6 +94,9 @@
     margin: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    @media screen and (max-width: 777px) {
+        width: 50%;
+    }
 }
 
 .form-order-buttons__button_place_order {

@@ -15,12 +15,26 @@
     text-transform: uppercase;
     border-bottom: 1px solid #E6E6EB;
     padding-bottom: 10px;
+    @media screen and (max-width: 725px) {
+        padding-bottom: 0px;
+    }
 }
 
 .translate-section__radio-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1180px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.radio-choice__label {
+    @media screen and (max-width: 1180px) {
+        width: 50%;
+        margin-bottom: 25px;
+    }
 }
 
 .radio-choice__input_visually-hidden {
@@ -45,7 +59,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 30px 90px 30px 90px;
+    padding: 30px 90px;
     border: 1px solid #C9D0E1;
     background-color: #F7F7FA;
     border-radius: 4px;

@@ -3,7 +3,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        margin-top: 10px;
+    }    
+}
+
+.header__logo {
+    @media screen and (max-width: 550px) {
+        margin-bottom: 15px;
+        order: 0;
+    }
 }
 
 .header__button {
@@ -13,6 +24,19 @@
     font-weight: 600;
     position: relative;
     min-width: 180px;
+}
+
+.header__button_back {
+    @media screen and (max-width: 550px) {
+        order: 1;
+        margin-bottom: 15px;
+    }    
+}
+
+.header__button_sign_in {
+    @media screen and (max-width: 550px) {
+        order: 2;
+    }    
 }
 
 .header__button_back::before {
