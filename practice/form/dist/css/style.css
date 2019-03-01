@@ -1035,11 +1035,20 @@ a {
   cursor: pointer;
 }
 
-.desired-tone {
+.form__wrapper-inline {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.form__desired-tone {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 80px;
+  width: 40%;
+  margin-top: 0px;
 }
 
 .desired-tone__title {
@@ -1055,6 +1064,119 @@ a {
 
 .desired-tone__title:before {
   content: "3";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 1px solid #70778b;
+  border-radius: 50%;
+  left: -60px;
+  top: -10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.desired-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.desired-radio__input_visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.desired-radio__value {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+  padding-left: 40px;
+  border: 1px solid #C9D0E1;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #95a1c1;
+}
+
+.desired-radio__value_friendly_casual::before {
+  position: absolute;
+  content: "\f086";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  left: 30px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.desired-radio__value_corporate_pro::before {
+  position: absolute;
+  content: "\f0f2";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  left: 30px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.desired-radio__value_media_formal::before {
+  position: absolute;
+  content: "\f086";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  left: 30px;
+  top: 22px;
+  font-size: 20px;
+}
+
+.desired-radio__input_visually-hidden:checked ~ .desired-radio__value {
+  outline: 5px solid #59A9E4;
+}
+
+.desired-radio__input_visually-hidden:checked ~ .desired-radio__value::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/check.png");
+  position: absolute;
+  top: -19px;
+  right: -19px;
+}
+
+.form__range {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.range__title {
+  font-size: 21px;
+  margin-bottom: 45px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.range__title::first-letter {
+  text-transform: uppercase;
+}
+
+.range__title:before {
+  content: "4";
   width: 40px;
   height: 40px;
   position: absolute;

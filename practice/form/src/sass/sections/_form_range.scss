@@ -1,0 +1,12 @@
+.form__range {
+    @include section;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin-top: 0px;;
+}
+
+.range__title {
+    @include section-title(4);
+}
