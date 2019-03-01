@@ -8,13 +8,67 @@
 
 .languages-container {
     display: flex;
+    flex-direction: column;
     color: #95a1c1;
+}
+
+.container-from {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.container-to {
+    display: flex;
+    flex-direction: row;
+}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
 }
 
 .select-wrapper__label {
     display: flex;
     align-items: center;
     position: relative;
+    margin-right: 25px;
+}
+
+.select-wrapper__btn {
+    margin-right: 25px;
+}
+
+.select-wrapper__btn_delete {
+    align-items: center;
+    background-image: url('../img/remove.png');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-color: transparent;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.select-wrapper__btn_add {
+    @include button;
+    background-color: transparent;
+    padding: 17px;
+    text-transform: uppercase;
+    width: 100px;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    padding-left: 30px;
+}
+
+.select-wrapper__btn_add::before {
+    position: absolute;
+    content: "\f067";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    left: 19px;
+    top: 18px;
+    font-size: 10px;
 }
 
 .select-wrapper__label::after {

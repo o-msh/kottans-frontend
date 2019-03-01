@@ -1,0 +1,7 @@
+.desired-tone {
+    @include section;
+}
+
+.desired-tone__title {
+    @include section-title(3);
+}
