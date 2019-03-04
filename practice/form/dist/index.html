@@ -192,11 +192,16 @@
                                 </label>
                             </div>
                         </section>
-                        <section class="form__range rande">
+                        <section class="form__range range">
                             <h3 class="range__title">tell us how urgent this job is</h3>
                             <div class="range__wrapper">
                                 <div class="range__input-wrapper">
-                                    <input type="range" name="timeline" class="range__input">
+                                    <input type="range" min="0" max="100" step="10" name="timeline" class="range__input">
+                                </div>
+                                <div class="range__input-subtext">
+                                    <span class="range__input-subtext_value">i got time</span>
+                                    <span class="range__input-subtext_value">average</span>
+                                    <span class="range__input-subtext_value">yesterday</span>
                                 </div>
                                 <div class="range__timeline-info timeline-info">
                                     <div class="timeline-info__wrapper">
