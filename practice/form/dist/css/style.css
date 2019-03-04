@@ -1047,7 +1047,7 @@ a {
   flex-direction: column;
   width: 100%;
   margin-top: 80px;
-  width: 40%;
+  width: 45%;
   margin-top: 0px;
 }
 
@@ -1130,7 +1130,7 @@ a {
 
 .desired-radio__value_media_formal::before {
   position: absolute;
-  content: "\f086";
+  content: "\f0a1";
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
   left: 30px;
@@ -1159,7 +1159,7 @@ a {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
   align-items: center;
   margin-top: 0px;
 }
@@ -1186,4 +1186,53 @@ a {
   top: -10px;
   text-align: center;
   line-height: 40px;
+}
+
+.range__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range__timeline-info {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #C9D0E1;
+  border-radius: 4px;
+}
+
+.timeline-info__wrapper {
+  width: 70%;
+  padding: 20px;
+}
+
+.timeline-info__header {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.timeline-info__header::before {
+  position: absolute;
+  content: "\f05a";
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  left: -40px;
+  top: -4px;
+  font-size: 23px;
+}
+
+.timeline-info__text {
+  letter-spacing: 0.5px;
+  line-height: 20px;
+}
+
+.timeline-info__text::first-letter {
+  text-transform: capitalize;
+}
+
+.timeline-info__text_average {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e2ae60;
 }

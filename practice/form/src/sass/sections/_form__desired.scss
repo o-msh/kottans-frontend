@@ -7,7 +7,7 @@
 
 .form__desired-tone {
     @include section;
-    width: 40%;
+    width: 45%;
     margin-top: 0px;
 }
 
@@ -63,7 +63,7 @@
 
 .desired-radio__value_media_formal::before {
     position: absolute;
-    content: "\f086";
+    content: "\f0a1";
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
     left: 30px;
