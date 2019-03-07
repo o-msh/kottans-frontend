@@ -1,0 +1,62 @@
+.payment-section {
+    @include section;
+}
+
+.payment-section__title {
+    @include section-title(5);
+}
+
+.payment-section__sign-in {
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.sign-in__additional-text {
+    padding-right: 3px;
+}
+
+.sign-in__additional-text::first-letter {
+    text-transform: uppercase;
+}
+
+.sign-in__link {
+    text-decoration: underline;
+}
+
+.sign-in__link::first-letter {
+    text-transform: uppercase;
+}
+
+.sign-in__text {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.sign-in-label {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.sign-in-label__text {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.sign-in__inline-labels-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+}
+
+.sign-in__inline-labels-wrapper > .sign-in__label {
+    margin-right: 30px;
+}
+
+.sign-in-label__input {
+    padding: 10px;
+}
