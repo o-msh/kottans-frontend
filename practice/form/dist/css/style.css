@@ -799,6 +799,7 @@ a {
   width: 25%;
   text-align: center;
   margin-bottom: 35px;
+  background-color: #F7F7F7;
 }
 
 .upload-section__label-text {
@@ -1107,6 +1108,7 @@ a {
   text-transform: capitalize;
   font-size: 15px;
   color: #95a1c1;
+  background-color: #F7F7F7;
 }
 
 .desired-radio__value_friendly_casual::before {
