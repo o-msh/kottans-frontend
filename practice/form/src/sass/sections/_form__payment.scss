@@ -1,3 +1,23 @@
+@mixin input-payment-section {
+    padding: 13px;
+    border-radius: 4px;
+    border: 1px solid #C9D0E1;
+}
+
+@mixin label-for-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@mixin text-for-label {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
 .payment-section {
     @include section;
 }
@@ -34,18 +54,12 @@
 }
 
 .user-information__label {
-    display: flex;
-    flex-direction: column;
+    @include label-for-input();
     width: 30%;
-    position: relative;
 }
 
 .user-information__text {
-    padding-left: 5px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-    opacity: 0.7;
+    @include text-for-label();
 }
 
 .user-information__inline-labels-wrapper {
@@ -59,9 +73,7 @@
 }
 
 .user-information__input {
-    padding: 13px;
-    border-radius: 4px;
-    border: 1px solid #C9D0E1;
+    @include input-payment-section();
 }
 
 .user-information__input[type=password]::-webkit-input-placeholder {
@@ -136,10 +148,47 @@
 
 .payment-method__value {
     display: flex;
+    height: 20px;
     flex-direction: row;
     justify-content: center;
 }
 
 .payment-section__card {
-    margin-top: 90px;
+    margin-top: 80px;
+    display: flex;
+}
+
+.payment-card__label {
+    @include label-for-input();
+    margin-right: 25px;
+}
+
+.payment-card__label_card_number {
+    width: 35%;
+}
+
+.payment-card__label_expiry {
+    width: 20%;
+}
+
+.payment-card__label_cvv {
+    width: 10%;
+}
+
+.payment-card__input_expiry::-webkit-input-placeholder {
+    opacity: 0.5; 
+}
+
+.payment-card__input_expiry::-webkit-input-placeholder {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.payment-card__text {
+    @include text-for-label();
+}
+
+.payment-card__input {
+    @include input-payment-section();
+    text-align: center;
 }

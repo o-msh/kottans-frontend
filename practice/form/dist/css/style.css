@@ -1367,8 +1367,8 @@ a {
 .user-information__label {
   display: flex;
   flex-direction: column;
-  width: 30%;
   position: relative;
+  width: 30%;
 }
 
 .user-information__text {
@@ -1473,10 +1473,55 @@ a {
 
 .payment-method__value {
   display: flex;
+  height: 20px;
   flex-direction: row;
   justify-content: center;
 }
 
 .payment-section__card {
-  margin-top: 90px;
+  margin-top: 80px;
+  display: flex;
+}
+
+.payment-card__label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 25px;
+}
+
+.payment-card__label_card_number {
+  width: 35%;
+}
+
+.payment-card__label_expiry {
+  width: 20%;
+}
+
+.payment-card__label_cvv {
+  width: 10%;
+}
+
+.payment-card__input_expiry::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.payment-card__input_expiry::-webkit-input-placeholder {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.payment-card__text {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.payment-card__input {
+  padding: 13px;
+  border-radius: 4px;
+  border: 1px solid #C9D0E1;
+  text-align: center;
 }

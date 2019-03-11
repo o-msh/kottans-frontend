@@ -239,7 +239,7 @@
                                 <div class="sign-in__link"><a href="#">sign in.</a></div>
                             </div>
                         </div>
-                        <div class="payment-section__user-informatIion user-information">
+                        <div class="payment-section__user-information user-information">
                             <label class="user-information__label">
                                 <div class="user-information__text">full name</div>
                                 <input type="text" name="full-name" class="user-information__input"
@@ -291,7 +291,24 @@
                             </label>
                         </div>
                         <div class="payment-section__card payment-card">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ad ut illo explicabo repellat? Expedita quam maiores enim, quidem porro dicta, non est laborum nam ratione sequi unde reprehenderit quaerat.
+                            <label class="payment-card__label payment-card__label_card_number">
+                                <div class="payment-card__text">card number</div>
+                                <input type="text" name="card-number"
+                                    class="payment-card__input payment-card__input_number" required
+                                    title="Example: 764183149411" minlength="12" maxlength="16">
+                                <span class="payment-card__visa-label"></span>
+                            </label>
+                            <label class="payment-card__label payment-card__label_expiry">
+                                <div class="payment-card__text">expiry date</div>
+                                <input type="text" name="expiry-date"
+                                    class="payment-card__input payment-card__input_expiry" placeholder="DD/MM/YY"
+                                    required title="Example: 11/03/19" minlength="8" maxlength="8">
+                            </label>
+                            <label class="payment-card__label payment-card__label_cvv">
+                                <div class="payment-card__text">code</div>
+                                <input type="text" name="cvv" class="payment-card__input" required
+                                    title="CVV code (3 digits)" minlength="3" maxlength="3">
+                            </label>
                         </div>
                     </section>
                 </div>
