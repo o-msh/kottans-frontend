@@ -1476,3 +1476,7 @@ a {
   flex-direction: row;
   justify-content: center;
 }
+
+.payment-section__card {
+  margin-top: 90px;
+}
