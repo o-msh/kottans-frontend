@@ -1423,6 +1423,16 @@ a {
   background-color: #EE6767;
 }
 
+.payment-method {
+  display: flex;
+  margin-top: 70px;
+}
+
+.payment-method__label {
+  position: relative;
+  width: 25%;
+}
+
 .payment-method__input_visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -1434,16 +1444,15 @@ a {
   border: 0;
 }
 
-.payment-method {
-  display: flex;
-  margin-top: 70px;
-}
-
-.payment-method__label {
-  width: 15%;
+.payment-method__value {
   border: 1px solid #C9D0E1;
-  padding: 25px;
+  padding: 30px;
   margin-right: 40px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  background-color: #F7F7F7;
+  border-radius: 4px;
 }
 
 .payment-method__input_visually-hidden:checked ~ .payment-method__value {
@@ -1457,5 +1466,11 @@ a {
   background-image: url("../img/check.png");
   position: absolute;
   top: -19px;
-  right: -19px;
+  right: 22px;
+}
+
+.payment-method__value {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
