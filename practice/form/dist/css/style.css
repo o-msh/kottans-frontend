@@ -1340,6 +1340,11 @@ a {
   font-weight: bold;
 }
 
+.sign-in__text {
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .sign-in__additional-text {
   padding-right: 3px;
 }
@@ -1356,35 +1361,63 @@ a {
   text-transform: uppercase;
 }
 
-.sign-in__text {
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.sign-in-label {
+.user-information__label {
   display: flex;
   flex-direction: column;
   width: 30%;
+  position: relative;
 }
 
-.sign-in-label__text {
+.user-information__text {
   padding-left: 5px;
   padding-bottom: 5px;
-  font-size: 10px;
+  font-weight: bold;
   text-transform: uppercase;
-  padding: 15px;
+  opacity: 0.7;
 }
 
-.sign-in__inline-labels-wrapper {
+.user-information__inline-labels-wrapper {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
 }
 
-.sign-in__inline-labels-wrapper > .sign-in__label {
+.user-information__inline-labels-wrapper > .user-information__label {
   margin-right: 30px;
 }
 
-.sign-in-label__input {
-  padding: 10px;
+.user-information__input {
+  padding: 13px;
+  border-radius: 4px;
+  border: 2px solid #C9D0E1;
+}
+
+.user-information__input::-webkit-input-placeholder {
+  letter-spacing: 1px;
+}
+
+.user-information__input-validator::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  font-size: 14px;
+  top: 43%;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+
+.user-information__input:valid ~ .user-information__input-validator::after {
+  content: "\f00c";
+  background-color: #59A9E4;
+}
+
+.user-information__input:invalid ~ .user-information__input-validator::after {
+  content: "\f00d";
+  background-color: #EE6767;
 }
