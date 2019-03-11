@@ -180,19 +180,19 @@
                             <h3 class="desired-tone__title">select your desired tone</h3>
                             <div class="desired-tone__radio-wrapper desired-radio">
                                 <label class="desired-radio__label">
-                                    <input type="radio" name="desired-tone" value="friendly-casual" class="desired-radio__input_visually-hidden"
+                                    <input type="radio" name="desired-tone" value="friendly-casual" class="desired-radio__input desired-radio__input_visually-hidden"
                                         required>
                                     <div class="desired-radio__value desired-radio__value_friendly_casual">friendly /
                                         casual</div>
                                 </label>
                                 <label class="desired-radio__label">
-                                    <input type="radio" name="desired-tone" value="corporate/pro" class="desired-radio__input_visually-hidden"
+                                    <input type="radio" name="desired-tone" value="corporate/pro" class="desired-radio__input desired-radio__input_visually-hidden"
                                         checked required>
                                     <div class="desired-radio__value desired-radio__value_corporate_pro">corporate /
                                         pro</div>
                                 </label>
                                 <label class="desired-radio__label">
-                                    <input type="radio" name="desired-tone" value="media/formal" class="desired-radio__input_visually-hidden"
+                                    <input type="radio" name="desired-tone" value="media/formal" class="desired-radio__input desired-radio__input_visually-hidden"
                                         required>
                                     <div class="desired-radio__value desired-radio__value_media_formal">media / formal
                                     </div>
@@ -233,7 +233,7 @@
                                 <div class="sign-in__link"><a href="#">sign in.</a></div>
                             </div>
                         </div>
-                        <div class="payment-section__user-information user-information">
+                        <div class="payment-section__user-informatIion user-information">
                             <label class="user-information__label">
                                 <div class="user-information__text">full name</div>
                                 <input type="text" name="full-name" class="user-information__input" placeholder="Mathier Mayer"
@@ -255,6 +255,23 @@
                                     <span class="user-information__input-validator"></span>
                                 </label>
                             </div>
+                        </div>
+                        <div class="payment-section__payment-method payment-method">
+                            <label class="payment-method__label">
+                                <input type="radio" name="payment-method" value="visa/mastercard" class="payment-method__input payment-method__input_visually-hidden"
+                                    required checked>
+                                <div class="payment-method__value payment-method__value_visa-mastercard"></div>
+                            </label>
+                            <label class="payment-method__label">
+                                <input type="radio" name="payment-method" value="paypal" class="payment-method__input payment-method__input_visually-hidden"
+                                    required>
+                                <div class="payment-method__value payment-method__value_paypal"></div>
+                            </label>
+                            <label class="payment-method__label">
+                                <input type="radio" name="payment-method" value="amazon" class="payment-method__input payment-method__input_visually-hidden"
+                                    required>
+                                <div class="payment-method__value payment-method__value_amazon"></div>
+                            </label>
                         </div>
                     </section>
                 </div>

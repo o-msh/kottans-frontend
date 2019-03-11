@@ -1215,6 +1215,7 @@ a {
 }
 
 .range__input {
+  cursor: pointer;
   -webkit-appearance: none;
   width: 100%;
   background: transparent;
@@ -1389,7 +1390,7 @@ a {
 .user-information__input {
   padding: 13px;
   border-radius: 4px;
-  border: 2px solid #C9D0E1;
+  border: 1px solid #C9D0E1;
 }
 
 .user-information__input[type=password]::-webkit-input-placeholder {
@@ -1420,4 +1421,41 @@ a {
 .user-information__input:invalid ~ .user-information__input-validator::after {
   content: "\f00d";
   background-color: #EE6767;
+}
+
+.payment-method__input_visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.payment-method {
+  display: flex;
+  margin-top: 70px;
+}
+
+.payment-method__label {
+  width: 15%;
+  border: 1px solid #C9D0E1;
+  padding: 25px;
+  margin-right: 40px;
+}
+
+.payment-method__input_visually-hidden:checked ~ .payment-method__value {
+  outline: 5px solid #59A9E4;
+}
+
+.payment-method__input_visually-hidden:checked ~ .payment-method__value::after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/check.png");
+  position: absolute;
+  top: -19px;
+  right: -19px;
 }
