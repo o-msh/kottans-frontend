@@ -1392,8 +1392,8 @@ a {
   border: 2px solid #C9D0E1;
 }
 
-.user-information__input::-webkit-input-placeholder {
-  letter-spacing: 1px;
+.user-information__input[type=password]::-webkit-input-placeholder {
+  letter-spacing: 8px;
 }
 
 .user-information__input-validator::after {

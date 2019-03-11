@@ -237,19 +237,19 @@
                             <label class="user-information__label">
                                 <div class="user-information__text">full name</div>
                                 <input type="text" name="full-name" class="user-information__input" placeholder="Mathier Mayer"
-                                    required>
+                                    required title="Please, enter a full name. Minimal length: 3 characters." minlength="3">
                                 <span class="user-information__input-validator"></span>
                             </label>
                             <div class="user-information__inline-labels-wrapper">
                                 <label class="user-information__label">
                                     <div class="user-information__text">email address</div>
                                     <input type="email" name="email" class="user-information__input" placeholder="mathieu.mm@me.com"
-                                        required title="Example: email@domain.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        required title="Please, enter email address. Example: email@domain.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                     <span class="user-information__input-validator"></span>
                                 </label>
                                 <label class="user-information__label">
                                     <div class="user-information__text">choose a password</div>
-                                    <input type="password" name="password" class="user-information__input" title="Set password more then 5 characters"
+                                    <input type="password" name="password" class="user-information__input" title="Set password more then 5 characters."
                                         minlength="5" placeholder="&#9899;&#9899;&#9899;&#9899;&#9899;&#9899;&#9899;&#9899;&#9899;"
                                         required>
                                     <span class="user-information__input-validator"></span>
