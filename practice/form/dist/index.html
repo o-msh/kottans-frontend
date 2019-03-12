@@ -300,11 +300,66 @@
                                     minlength="3" maxlength="3" inputmode="numeric" pattern="[0-9]{3}" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                             </label>
                         </div>
+                        <div class="payment-section__complete-order complete-order">
+                            <label class="complete-order__label">
+                                <input type="checkbox" name="agree" class="complete-order__input" checked>
+                                <span class="complete-order__agree-text">I agree to the</span>
+                                <a href="#" class="text-link-small">Terms &amp; Conditions</a>
+                            </label>
+                            <div class="complete-order__buttons-wrapper">
+                                <button class="complete-order__button complete-order__button_place_order" type="submit">place
+                                    order</button>
+                                <button class="complete-order__button complete-order__button_print_quoter" type="button">print
+                                    a quote</button>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </form>
         </main>
     </div>
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer__block footer__block_info">
+                <div class="footer__content">
+                    <h3 class="footer__title footer__title_info">what we do</h3>
+                    <div class="footer__text footer__text_info">
+                        We provide a full range of language services including content development, document, website
+                        and social media accounts translations.
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block_address">
+                <div class="footer__content">
+                    <h3 class="footer__title footer__title_address">our main office</h3>
+                    <div class="footer__text">
+                        <address class="footer__address">
+                            Dubai, UAE<br>P.O.Box: 502735<br>Phone: +971 (0) 44278128
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block_social">
+                <div class="footer__content">
+                    <h3 class="footer__title footer__title_social">connect with us</h3>
+                    <div class="footer__text">
+                        <ul class="footer__social-items social-items">
+                            <li class="social-items__item"><a href="#" class="social-items__link social-items__link_facebook">Facebook</a></li>
+                            <li class="social-items__item"><a href="#" class="social-items__link social-items__link_twitter">Twitter</a></li>
+                            <li class="social-items__item"><a href="#" class="social-items__link social-items__link_linkedin">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__block footer__block_logo">
+                <div class="footer__content">
+                    <div class="footer__text">
+                        <a href="#" class="footer__logo"><img src="../img/logo-footer.png" alt="Logo" class="footer__logo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

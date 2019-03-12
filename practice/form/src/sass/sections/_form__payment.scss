@@ -20,6 +20,7 @@
 
 .payment-section {
     @include section;
+    margin-bottom: 80px;
 }
 
 .payment-section__title {
@@ -203,4 +204,51 @@
     position: absolute;
     top: 25px;
     right: 10px;
+}
+
+.payment-section__complete-order {
+    margin-top: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.complete-order__label {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15px;
+}
+
+.complete-order__input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.text-link-small {
+    text-decoration: underline;
+}
+
+.complete-order__agree-text {
+    margin-right: 3px;
+}
+
+.complete-order__buttons-wrapper {
+    display: flex;
+}
+
+.complete-order__button {
+    @include button;
+    padding: 20px 40px;
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.complete-order__button_place_order {
+    background-color: #5FCAC6;
+    color: #FFFFFF;
+}
+
+.complete-order__button_print_quoter {
+    background-color: #F7F7FA;
 }
