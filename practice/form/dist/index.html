@@ -244,7 +244,8 @@
                                 <label class="user-information__label">
                                     <div class="user-information__text">email address</div>
                                     <input type="email" name="email" class="user-information__input" placeholder="mathieu.mm@me.com"
-                                        required title="Please, enter email address. Example: email@domain.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                        required title="Please, enter email address. Example: email@domain.com" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        inputmode="email">
                                     <span class="user-information__input-validator"></span>
                                 </label>
                                 <label class="user-information__label">
@@ -283,18 +284,20 @@
                             <label class="payment-card__label payment-card__label_card_number">
                                 <div class="payment-card__text">card number</div>
                                 <input type="text" name="card-number" class="payment-card__input payment-card__input_number"
-                                    required title="Example: 764183149411" minlength="12" maxlength="16">
+                                    required title="Enter your card number. Example: 8746 5678 9101 4780" minlength="19"
+                                    maxlength="19" pattern="[0-9\s]" inputmode="numeric" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 32">
                                 <span class="payment-card__visa-label"></span>
                             </label>
                             <label class="payment-card__label payment-card__label_expiry">
                                 <div class="payment-card__text">expiry date</div>
                                 <input type="text" name="expiry-date" class="payment-card__input payment-card__input_expiry"
-                                    placeholder="DD/MM/YY" required title="Example: 11/03/19" minlength="8" maxlength="8">
+                                    placeholder="DD/MM/YY" required title="Example: 11/03/19" minlength="8" maxlength="8"
+                                    inputmode="numeric" pattern="([0-9]{2}[/]?){2}" onkeypress="return event.charCode >= 47 && event.charCode <= 57">
                             </label>
                             <label class="payment-card__label payment-card__label_cvv">
                                 <div class="payment-card__text">code</div>
                                 <input type="text" name="cvv" class="payment-card__input" required title="CVV code (3 digits)"
-                                    minlength="3" maxlength="3">
+                                    minlength="3" maxlength="3" inputmode="numeric" pattern="[0-9]{3}" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
                             </label>
                         </div>
                     </section>
