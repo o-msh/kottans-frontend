@@ -19,6 +19,9 @@
     text-align: center;
     margin-bottom: 35px;
     background-color: #F7F7F7;
+    @media screen and (max-width: 1050px) {
+        width: 100%;
+     }
 }
 
 .upload-section__label-text {
@@ -54,6 +57,7 @@
     padding: 20px 50px;
     color: #95a1c1;
     border-radius: 5px;
+    overflow: auto;
 }
 
 .upload-section__column {
@@ -102,4 +106,3 @@
     cursor: pointer;
     @include focus-hover;
 }
-

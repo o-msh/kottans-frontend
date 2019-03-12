@@ -5,11 +5,17 @@
     width: 55%;
     align-items: center;
     margin-top: 0px;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
 }
 
 .range__title {
     @include section-title(4);
     margin-bottom: 75px;
+    @media screen and (max-width: 900px) {
+        width: 100%;
+    }
 }
 
 .range__wrapper {

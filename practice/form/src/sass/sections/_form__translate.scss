@@ -35,6 +35,10 @@
         width: 50%;
         margin-bottom: 25px;
     }
+    @media screen and (max-width: 400px) {
+        width: 100%;
+        margin-bottom: 25px;
+    }
     @include focus-hover;
 }
 
@@ -66,6 +70,9 @@
     border-radius: 4px;
     cursor: pointer;
     position: relative;
+    @media screen and (max-width: 400px) {
+        padding: 30px 0px;
+    }
 }
 
 .radio-choice__image_website {

@@ -14,17 +14,18 @@
 
 .container-from {
     display: flex;
-    margin-bottom: 35px;
-}
-
-.container-to {
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 30px;
+    @media screen and (max-width: 900px) {
+        justify-content: center;
+    }
 }
 
 .select-wrapper {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+    }
 }
 
 .select-wrapper__label {
@@ -32,6 +33,12 @@
     align-items: center;
     position: relative;
     margin-right: 25px;
+}
+
+.select-wrapper__label_to {
+    @media screen and (max-width: 850px) {
+        margin: 30px -40px 30px 0px;
+    }
 }
 
 .select-wrapper__btn {
@@ -48,6 +55,9 @@
     width: 10px;
     height: 20px;
     cursor: pointer;
+    @media screen and (max-width: 850px) {
+        margin: 0px -40px 30px 0px;
+    }
 }
 
 .select-wrapper__btn_add {
@@ -60,6 +70,9 @@
     font-weight: bold;
     position: relative;
     padding-left: 30px;
+    @media screen and (max-width: 850px) {
+        margin: 0px -40px 0px 0px;
+    }
 }
 
 .select-wrapper__btn_add::before {
