@@ -284,15 +284,15 @@
                             <label class="payment-card__label payment-card__label_card_number">
                                 <div class="payment-card__text">card number</div>
                                 <input type="text" name="card-number" class="payment-card__input payment-card__input_number"
-                                    required title="Enter your card number. Example: 8746 5678 9101 4780" minlength="19"
-                                    maxlength="19" pattern="[0-9\s]" inputmode="numeric" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 32">
+                                    required title="Enter your card number. Example: 8746 5678 9101 4780" minlength="16"
+                                    maxlength="19" pattern="[0-9 ]{16,19}" inputmode="numeric" onkeypress="return (event.charCode >= 48 && event.charCode <= 57) || event.charCode === 32">
                                 <span class="payment-card__visa-label"></span>
                             </label>
                             <label class="payment-card__label payment-card__label_expiry">
                                 <div class="payment-card__text">expiry date</div>
                                 <input type="text" name="expiry-date" class="payment-card__input payment-card__input_expiry"
                                     placeholder="DD/MM/YY" required title="Example: 11/03/19" minlength="8" maxlength="8"
-                                    inputmode="numeric" pattern="([0-9]{2}[/]?){2}" onkeypress="return event.charCode >= 47 && event.charCode <= 57">
+                                    inputmode="numeric" pattern="([0-9]{2}[/]?){3}" onkeypress="return event.charCode >= 47 && event.charCode <= 57">
                             </label>
                             <label class="payment-card__label payment-card__label_cvv">
                                 <div class="payment-card__text">code</div>
@@ -304,8 +304,8 @@
                             <label class="complete-order__label">
                                 <input type="checkbox" name="agree" class="complete-order__input" checked>
                                 <span class="complete-order__agree-text">I agree to the</span>
-                                <a href="#" class="text-link-small">Terms &amp; Conditions</a>
                             </label>
+                            <div><a href="#" class="text-link-small">Terms &amp; Conditions</a></div>
                             <div class="complete-order__buttons-wrapper">
                                 <button class="complete-order__button complete-order__button_place_order" type="submit">place
                                     order</button>

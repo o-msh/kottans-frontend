@@ -36,6 +36,7 @@
 
 .select-wrapper__btn {
     margin-right: 25px;
+    @include focus-hover;
 }
 
 .select-wrapper__btn_delete {
@@ -105,4 +106,5 @@
     font-size: 15px;
     color: #95a1c1;
     cursor: pointer;
+    @include focus-hover;
 }

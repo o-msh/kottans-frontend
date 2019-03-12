@@ -100,5 +100,6 @@
     width: 10px;
     height: 20px;
     cursor: pointer;
+    @include focus-hover;
 }
 

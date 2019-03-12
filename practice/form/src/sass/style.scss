@@ -4,3 +4,13 @@
 @import 'header';
 @import 'main', 'form';
 @import 'footer';
+
+a {
+    @include focus-hover;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:focus {
+        text-decoration: underline;
+    }
+}

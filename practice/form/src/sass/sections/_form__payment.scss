@@ -75,6 +75,7 @@
 
 .user-information__input {
     @include input-payment-section();
+    @include focus-hover;
 }
 
 .user-information__input[type=password]::-webkit-input-placeholder {
@@ -129,8 +130,10 @@
     cursor: pointer;
     display: flex;
     align-content: center;
+    justify-content: center;
     background-color: #F7F7F7;
     border-radius: 4px;
+    @include focus-hover;
 }
 
 .payment-method__input_visually-hidden:checked ~ .payment-method__value {
@@ -145,13 +148,6 @@
     position: absolute;
     top: -19px;
     right: 22px;
-}
-
-.payment-method__value {
-    display: flex;
-    height: 20px;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .payment-section__card {
@@ -193,6 +189,7 @@
 .payment-card__input {
     @include input-payment-section();
     text-align: center;
+    @include focus-hover;
 }
 
 .payment-card__visa-label {
@@ -216,12 +213,12 @@
 .complete-order__label {
     display: flex;
     justify-content: space-around;
-    margin-right: 15px;
+    cursor: pointer;
 }
 
 .complete-order__input {
     margin-right: 10px;
-    cursor: pointer;
+    @include focus-hover;
 }
 
 .text-link-small {

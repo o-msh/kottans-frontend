@@ -7,7 +7,7 @@
     @media screen and (max-width: 550px) {
         flex-direction: column;
         margin-top: 10px;
-    }    
+    }
 }
 
 .header__logo {
@@ -15,6 +15,7 @@
         margin-bottom: 15px;
         order: 0;
     }
+    @include focus-hover;
 }
 
 .header__button {
@@ -24,6 +25,7 @@
     font-weight: 600;
     position: relative;
     min-width: 180px;
+    @include focus-hover;
 }
 
 .header__button_back {

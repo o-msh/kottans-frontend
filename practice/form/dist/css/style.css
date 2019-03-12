@@ -378,6 +378,14 @@ a {
   }
 }
 
+.header__logo:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.header__logo:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .header__button {
   color: #95a1c1;
   border: 1px solid #C9D0E1;
@@ -392,6 +400,22 @@ a {
   font-weight: 600;
   position: relative;
   min-width: 180px;
+}
+
+.header__button:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.header__button:focus {
+  outline: 2px solid #59A9E4;
+}
+
+.header__button:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.header__button:focus {
+  outline: 2px solid #59A9E4;
 }
 
 @media screen and (max-width: 550px) {
@@ -581,6 +605,14 @@ a {
   font-weight: bold;
 }
 
+.form-order-buttons__button:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.form-order-buttons__button:focus {
+  outline: 2px solid #59A9E4;
+}
+
 @media screen and (max-width: 777px) {
   .form-order-buttons__button {
     width: 50%;
@@ -690,6 +722,14 @@ a {
     width: 50%;
     margin-bottom: 25px;
   }
+}
+
+.radio-choice__label:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.radio-choice__label:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .radio-choice__input_visually-hidden {
@@ -816,6 +856,14 @@ a {
   font-weight: 600;
 }
 
+.upload-section__label-text:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.upload-section__label-text:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .upload-section__label-text::first-letter {
   text-transform: uppercase;
 }
@@ -897,6 +945,14 @@ a {
   cursor: pointer;
 }
 
+.upload-section__row_delete:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.upload-section__row_delete:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .languages-section {
   display: flex;
   flex-direction: column;
@@ -960,6 +1016,14 @@ a {
   margin-right: 25px;
 }
 
+.select-wrapper__btn:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.select-wrapper__btn:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .select-wrapper__btn_delete {
   align-items: center;
   background-image: url("../img/remove.png");
@@ -988,6 +1052,14 @@ a {
   font-weight: bold;
   position: relative;
   padding-left: 30px;
+}
+
+.select-wrapper__btn_add:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.select-wrapper__btn_add:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .select-wrapper__btn_add::before {
@@ -1034,6 +1106,14 @@ a {
   font-size: 15px;
   color: #95a1c1;
   cursor: pointer;
+}
+
+.select-wrapper__select:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.select-wrapper__select:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .form__wrapper-inline {
@@ -1109,6 +1189,14 @@ a {
   font-size: 15px;
   color: #95a1c1;
   background-color: #F7F7F7;
+}
+
+.desired-radio__value:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.desired-radio__value:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .desired-radio__value_friendly_casual::before {
@@ -1396,6 +1484,14 @@ a {
   border: 1px solid #C9D0E1;
 }
 
+.user-information__input:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.user-information__input:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .user-information__input[type=password]::-webkit-input-placeholder {
   letter-spacing: 8px;
 }
@@ -1454,8 +1550,17 @@ a {
   cursor: pointer;
   display: flex;
   align-content: center;
+  justify-content: center;
   background-color: #F7F7F7;
   border-radius: 4px;
+}
+
+.payment-method__value:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.payment-method__value:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .payment-method__input_visually-hidden:checked ~ .payment-method__value {
@@ -1470,13 +1575,6 @@ a {
   position: absolute;
   top: -19px;
   right: 22px;
-}
-
-.payment-method__value {
-  display: flex;
-  height: 20px;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .payment-section__card {
@@ -1528,6 +1626,14 @@ a {
   text-align: center;
 }
 
+.payment-card__input:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.payment-card__input:focus {
+  outline: 2px solid #59A9E4;
+}
+
 .payment-card__visa-label {
   background-image: url("../img/cc-visa-brands.svg");
   background-repeat: no-repeat;
@@ -1549,12 +1655,19 @@ a {
 .complete-order__label {
   display: flex;
   justify-content: space-around;
-  margin-right: 15px;
+  cursor: pointer;
 }
 
 .complete-order__input {
   margin-right: 10px;
-  cursor: pointer;
+}
+
+.complete-order__input:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.complete-order__input:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .text-link-small {
@@ -1582,6 +1695,14 @@ a {
   margin-left: 25px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.complete-order__button:hover {
+  outline: 2px solid #59A9E4;
+}
+
+.complete-order__button:focus {
+  outline: 2px solid #59A9E4;
 }
 
 .complete-order__button_place_order {
@@ -1675,10 +1796,6 @@ a {
   cursor: pointer;
 }
 
-.social-items__link:hover {
-  text-decoration: underline;
-}
-
 .social-items__item {
   position: relative;
 }
@@ -1703,4 +1820,20 @@ a {
 
 .social-items__link_linkedin::before {
   background-image: url("../img/linkedin-logo.png");
+}
+
+a:hover {
+  outline: 2px solid #59A9E4;
+}
+
+a:focus {
+  outline: 2px solid #59A9E4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  text-decoration: underline;
 }

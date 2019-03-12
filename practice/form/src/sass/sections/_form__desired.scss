@@ -41,6 +41,7 @@
     font-size: 15px;
     color: #95a1c1;
     background-color: #F7F7F7;
+    @include focus-hover;
 }
 
 .desired-radio__value_friendly_casual::before {
