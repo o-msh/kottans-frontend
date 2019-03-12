@@ -165,6 +165,7 @@
 
 .payment-card__label_card_number {
     width: 35%;
+    position: relative;
 }
 
 .payment-card__label_expiry {
@@ -191,4 +192,15 @@
 .payment-card__input {
     @include input-payment-section();
     text-align: center;
+}
+
+.payment-card__visa-label {
+    background-image: url('../img/cc-visa-brands.svg');
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    opacity: 0.3;
+    position: absolute;
+    top: 25px;
+    right: 10px;
 }
