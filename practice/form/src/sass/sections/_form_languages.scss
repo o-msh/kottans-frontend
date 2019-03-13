@@ -33,11 +33,9 @@
     align-items: center;
     position: relative;
     margin-right: 25px;
-}
-
-.select-wrapper__label_to {
-    @media screen and (max-width: 850px) {
-        margin: 30px -40px 30px 0px;
+    @media screen and (max-width: 350px) {
+        flex-direction: column;
+        margin-right: 0px;
     }
 }
 
@@ -58,6 +56,9 @@
     @media screen and (max-width: 850px) {
         margin: 0px -40px 30px 0px;
     }
+    @media screen and (max-width: 350px) {
+        margin: 10px 0px;
+    }
 }
 
 .select-wrapper__btn_add {
@@ -72,6 +73,9 @@
     padding-left: 30px;
     @media screen and (max-width: 850px) {
         margin: 0px -40px 0px 0px;
+    }
+    @media screen and (max-width: 350px) {
+        margin: 0px;
     }
 }
 
@@ -99,6 +103,29 @@
     height: 100%;
     font-size: 15px;
     pointer-events: none;
+    @media screen and (max-width: 350px) {
+        height: 65%;
+        top: 24px;
+    }
+}
+
+.select-wrapper__label_to {
+    @media screen and (max-width: 850px) {
+        margin: 30px -40px 30px 0px;
+    }
+}
+
+.select-wrapper__label_to {
+    @media screen and (max-width: 350px) {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+.select-wrapper__label_to::after {
+    @media screen and (max-width: 350px) {
+        height: 100%;
+        top: 0px;
+    }
 }
 
 .select-wrapper__title {
@@ -107,6 +134,11 @@
     margin-right: 30px;
     width: 35px;
     text-align: right;
+    @media screen and (max-width: 350px) {
+        margin-right: 0px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
 }
 
 .select-wrapper__select {
@@ -120,4 +152,7 @@
     color: #95a1c1;
     cursor: pointer;
     @include focus-hover;
+    @media screen and (max-width: 350px) {
+        padding: 15px 40px 15px 5px;
+    }
 }

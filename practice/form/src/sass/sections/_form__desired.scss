@@ -50,6 +50,12 @@
     color: #95a1c1;
     background-color: #F7F7F7;
     @include focus-hover;
+    @media screen and (max-width: 400px) {
+        width: 100%;
+    }
+    @media screen and (max-width: 300px) {
+        padding: 25px 0px;
+    }
 }
 
 .desired-radio__label {
@@ -87,6 +93,12 @@
     left: 30px;
     top: 22px;
     font-size: 20px;
+}
+
+.desired-radio__value::before {
+    @media screen and (max-width: 300px) {
+        content: '';
+    }
 }
 
 .desired-radio__input_visually-hidden:checked ~ .desired-radio__value {

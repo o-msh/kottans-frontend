@@ -40,6 +40,9 @@
 .sign-in__text {
     display: flex;
     margin-bottom: 40px;
+    @media screen and (max-width: 400px) {
+        flex-direction: column;
+    }
 }
 
 .sign-in__additional-text {
@@ -74,7 +77,7 @@
     @include label-for-input();
     width: 30%;
     @media screen and (max-width: 900px) {
-        width: 50%;
+        width: 100%;
         align-self: center;
     }
 }

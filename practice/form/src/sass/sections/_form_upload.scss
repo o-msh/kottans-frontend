@@ -58,6 +58,9 @@
     color: #95a1c1;
     border-radius: 5px;
     overflow: auto;
+    @media screen and (max-width: 700px) {
+        padding: 20px 10px;
+    }
 }
 
 .upload-section__column {
@@ -69,6 +72,12 @@
     display: flex;
     align-items: center;
     height: 40px;
+}
+
+.upload-section__row_value {
+    @media screen and (max-width: 700px) {
+        align-self: center;
+    }
 }
 
 .upload-section__column_remove > .upload-section__row_value {
@@ -94,6 +103,9 @@
 .upload-section__row_caption {
     text-transform: uppercase;
     font-weight: bold;
+    @media screen and (max-width: 600px) {
+        padding: 0px 5px;
+    }
 }
 
 .upload-section__row_delete {
