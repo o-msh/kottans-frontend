@@ -18,7 +18,7 @@
     @include focus-hover;
 }
 
-.header__button {
+.header__link {
     @include button;
     text-transform: uppercase;
     background-color: transparent;
@@ -26,22 +26,23 @@
     position: relative;
     min-width: 180px;
     @include focus-hover;
+    text-align: center;
 }
 
-.header__button_back {
+.header__link_back {
     @media screen and (max-width: 550px) {
         order: 1;
         margin-bottom: 15px;
     }    
 }
 
-.header__button_sign_in {
+.header__link_sign_in {
     @media screen and (max-width: 550px) {
         order: 2;
     }    
 }
 
-.header__button_back::before {
+.header__link_back::before {
     content: '';
     background-image: url('../img/arrow-left.png');
     background-repeat: no-repeat;
@@ -52,7 +53,7 @@
     top: 25px;
 }
 
-.header__button_sign_in::before {
+.header__link_sign_in::before {
     content: '';
     background-image: url('../img/user.png');
     background-repeat: no-repeat;

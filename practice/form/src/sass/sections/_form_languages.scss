@@ -32,19 +32,35 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-right: 25px;
+    margin-right: 20px;
     @media screen and (max-width: 350px) {
         flex-direction: column;
         margin-right: 0px;
     }
 }
 
+.select-wrapper__label_to {
+    @media screen and (max-width: 850px) {
+        margin: 30px -65px 30px 0px;
+    }
+    @media screen and (max-width: 350px) {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+.select-wrapper__label_to::after {
+    @media screen and (max-width: 350px) {
+        height: 100%;
+        top: 0px;
+    }
+}
+
 .select-wrapper__btn {
-    margin-right: 25px;
     @include focus-hover;
 }
 
 .select-wrapper__btn_delete {
+    margin-left: 5px;
     align-items: center;
     background-image: url('../img/remove.png');
     background-repeat: no-repeat;
@@ -53,9 +69,6 @@
     width: 10px;
     height: 20px;
     cursor: pointer;
-    @media screen and (max-width: 850px) {
-        margin: 0px -40px 30px 0px;
-    }
     @media screen and (max-width: 350px) {
         margin: 10px 0px;
     }
@@ -89,45 +102,6 @@
     font-size: 10px;
 }
 
-.select-wrapper__label::after {
-    content: "";
-    font-weight: 900;
-    font-family: "Font Awesome 5 Free";
-    position: absolute;
-    line-height: 42px;
-    top: 0;
-    right: 0;
-    text-align: center;
-    border-left: 1px solid #C9D0E1;
-    width: 50px;
-    height: 100%;
-    font-size: 15px;
-    pointer-events: none;
-    @media screen and (max-width: 350px) {
-        height: 65%;
-        top: 24px;
-    }
-}
-
-.select-wrapper__label_to {
-    @media screen and (max-width: 850px) {
-        margin: 30px -40px 30px 0px;
-    }
-}
-
-.select-wrapper__label_to {
-    @media screen and (max-width: 350px) {
-        margin: 30px 0px 0px 0px;
-    }
-}
-
-.select-wrapper__label_to::after {
-    @media screen and (max-width: 350px) {
-        height: 100%;
-        top: 0px;
-    }
-}
-
 .select-wrapper__title {
     text-transform: uppercase;
     font-weight: bold;
@@ -151,8 +125,29 @@
     font-size: 15px;
     color: #95a1c1;
     cursor: pointer;
+}
+
+.select-wrapper__container {
+    position: relative;
     @include focus-hover;
+}
+
+.select-wrapper__container::after {
+    content: "";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    line-height: 42px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    border-left: 1px solid #C9D0E1;
+    width: 50px;
+    height: 100%;
+    font-size: 15px;
+    pointer-events: none;
     @media screen and (max-width: 350px) {
-        padding: 15px 40px 15px 5px;
+        height: 100%;
+        top: 0px;
     }
 }

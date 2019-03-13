@@ -52,8 +52,17 @@
     font-style: normal;
 }
 
+.footer__address-list {
+    list-style: none;
+    padding: 0px;
+}
+
 .footer__logo {
     width: 100px;
+}
+
+.footer__phone {
+    color: #A5ABC5;
 }
 
 .footer__block_info {
