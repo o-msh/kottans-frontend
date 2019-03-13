@@ -185,6 +185,10 @@
     outline: 5px solid #59A9E4;
 }
 
+.payment-method__input_visually-hidden:focus ~ .payment-method__value {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
 .payment-method__input_visually-hidden:checked ~ .payment-method__value::after {
     content: '';
     width: 32px;

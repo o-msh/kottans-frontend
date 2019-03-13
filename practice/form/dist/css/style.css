@@ -539,7 +539,7 @@ a {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 550) {
+@media screen and (max-width: 550px) {
   .order-items {
     flex-direction: column;
     align-items: center;
@@ -747,7 +747,7 @@ a {
 .radio-choice__input_visually-hidden {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   width: 1px;
   margin: -1px;
@@ -757,6 +757,10 @@ a {
 
 .radio-choice__input_visually-hidden:checked ~ .radio-choice__wrapper {
   outline: 5px solid #59A9E4;
+}
+
+.radio-choice__input_visually-hidden:focus + .radio-choice__wrapper {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .radio-choice__input_visually-hidden:checked ~ .radio-choice__wrapper::after {
@@ -944,12 +948,16 @@ a {
 .upload-section__input {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   width: 1px;
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.upload-section__input:focus + .upload-section__label-text {
+  outline: 2px solid #59A9E4;
 }
 
 .upload-section__list-wrapper {
@@ -1019,7 +1027,7 @@ a {
 .upload-section__row_delete {
   background-image: url("../img/remove.png");
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: #ffffff;
   border-color: transparent;
   width: 10px;
   height: 20px;
@@ -1162,7 +1170,7 @@ a {
   align-items: center;
   background-image: url("../img/remove.png");
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: #ffffff;
   border-color: transparent;
   width: 10px;
   height: 20px;
@@ -1415,7 +1423,7 @@ a {
 .desired-radio__input_visually-hidden {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   width: 1px;
   margin: -1px;
@@ -1509,6 +1517,10 @@ a {
 
 .desired-radio__input_visually-hidden:checked ~ .desired-radio__value {
   outline: 5px solid #59A9E4;
+}
+
+.desired-radio__input_visually-hidden:focus ~ .desired-radio__value {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .desired-radio__input_visually-hidden:checked ~ .desired-radio__value::after {
@@ -1975,7 +1987,7 @@ a {
 .payment-method__input_visually-hidden {
   position: absolute;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   height: 1px;
   width: 1px;
   margin: -1px;
@@ -2011,6 +2023,10 @@ a {
 
 .payment-method__input_visually-hidden:checked ~ .payment-method__value {
   outline: 5px solid #59A9E4;
+}
+
+.payment-method__input_visually-hidden:focus ~ .payment-method__value {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .payment-method__input_visually-hidden:checked ~ .payment-method__value::after {
@@ -2432,16 +2448,10 @@ a {
 
 a:hover {
   outline: 2px solid #59A9E4;
-}
-
-a:focus {
-  outline: 2px solid #59A9E4;
-}
-
-a:hover {
   text-decoration: underline;
 }
 
 a:focus {
+  outline: 2px solid #59A9E4;
   text-decoration: underline;
 }

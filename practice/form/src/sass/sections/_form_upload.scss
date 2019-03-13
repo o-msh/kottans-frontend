@@ -50,6 +50,10 @@
     @include visually-hidden;
 }
 
+.upload-section__input:focus + .upload-section__label-text {
+    outline: 2px solid #59A9E4;
+}
+
 .upload-section__list-wrapper {
     border: 1px solid #C9D0E1;
     display: flex;
@@ -111,7 +115,7 @@
 .upload-section__row_delete {
     background-image: url('../img/remove.png');
     background-repeat: no-repeat;
-    background-color: transparent;
+    background-color: #ffffff;
     border-color: transparent;
     width: 10px;
     height: 20px;

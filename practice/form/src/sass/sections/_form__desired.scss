@@ -105,6 +105,11 @@
     outline: 5px solid #59A9E4;
 }
 
+.desired-radio__input_visually-hidden:focus ~ .desired-radio__value {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
 .desired-radio__input_visually-hidden:checked ~ .desired-radio__value::after {
     content: '';
     width: 32px;
