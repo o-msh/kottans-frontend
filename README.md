@@ -17,6 +17,7 @@
  - [x] 3. [Intro to HTML and CSS](task_html_css_intro/html_css.md) 
  - [x] 4. [Responsive Web Design](task_responsive_web_design/responsive.md)
  - [x] 5. HTML & CSS Practice (Popup)
+    - Reviewed and approved by **@A-Ostrovnyy**
     - [Demo](https://o-msh.github.io/kottans-frontend/practice/popup/dist/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/popup)
  - [x] 6. [JavaScript Basics](task_js_basics/js_basics.md)
  - [x] 7. [Document Object Model](task_js_dom/js_dom.md)
@@ -30,7 +31,7 @@
     - [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-pre-oop/)
   - [x] 9. [Object Oriented JS](task_js_oop/js-oop.md)
     - Reviewed and approved by **@OleksiyRudenko**
-    - [Demo]according to mockup(https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
+    - [Demo](https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
   - [x] 10. OOP Exercise (A Tiny JS World OOP)
     - Reviewed and approved by **@OleksiyRudenko**
     - [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-oop/)
