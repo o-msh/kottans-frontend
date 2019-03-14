@@ -42,3 +42,6 @@
   - [x] 14. Friends App
     - Reviewed and approved by **@A-Ostrovnyy** and **@IgorKurkov**
     - [Demo](http://o-msh.github.io/kottans-frontend/practice/friends-app/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/friends-app)
+  - [x] 15. HTML 5 - form
+    - Reviewed and approved by **@A-Ostrovnyy**
+    - [Demo](https://o-msh.github.io/kottans-frontend/practice/form/dist/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/form/src)
