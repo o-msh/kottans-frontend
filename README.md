@@ -30,7 +30,7 @@
     - [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-pre-oop/)
   - [x] 9. [Object Oriented JS](task_js_oop/js-oop.md)
     - Reviewed and approved by **@OleksiyRudenko**
-    - [Demo](https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
+    - [Demo]according to mockup(https://o-msh.github.io/kottans-frontend/practice/frogger-game/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/frogger-game)
   - [x] 10. OOP Exercise (A Tiny JS World OOP)
     - Reviewed and approved by **@OleksiyRudenko**
     - [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/tiny-js-world-oop/)
@@ -42,6 +42,6 @@
   - [x] 14. Friends App
     - Reviewed and approved by **@A-Ostrovnyy** and **@IgorKurkov**
     - [Demo](http://o-msh.github.io/kottans-frontend/practice/friends-app/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/friends-app)
-  - [x] 15. HTML 5 - form
+  - [x] 15. HTML 5 - form according to [mockup](practice/form/form-mockup.png) | on  [dribbble](https://dribbble.com/shots/1322677-Checkout-Page/attachments/186093)
     - Reviewed and approved by **@A-Ostrovnyy**
     - [Demo](https://o-msh.github.io/kottans-frontend/practice/form/dist/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/form/src)
