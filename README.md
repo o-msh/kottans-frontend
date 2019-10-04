@@ -43,6 +43,6 @@
   - [x] 14. Friends App
     - Reviewed and approved by **@A-Ostrovnyy** and **@IgorKurkov**
     - [Demo](http://o-msh.github.io/kottans-frontend/practice/friends-app/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/friends-app)
-  - [x] 15. HTML 5 - form according to [mockup](practice/form/form-mockup.png) | on  [dribbble](https://dribbble.com/shots/1322677-Checkout-Page/attachments/186093)
+  - [x] 15. HTML 5 - form according to [mockup](practice/form/form-mockup.png). Also on [dribbble](https://dribbble.com/shots/1322677-Checkout-Page/attachments/186093)
     - Reviewed and approved by **@A-Ostrovnyy**
     - [Demo](https://o-msh.github.io/kottans-frontend/practice/form/dist/) | [Code base](https://github.com/o-msh/kottans-frontend/tree/master/practice/form/src)
